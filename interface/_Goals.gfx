@@ -84,7 +84,7 @@ spriteTypes = {
         texturefile = "gfx/interface/goals/UKR/zalyzniy1.dds"
     }
 	spriteType = {
-        name = "GFX_2b24"
+        name = "GFX_minomet"
         texturefile = "gfx/interface/goals/UKR/2b24.dds"
     }
 ########################################################################ukrnova

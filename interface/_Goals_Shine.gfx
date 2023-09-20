@@ -100,7 +100,7 @@ spriteTypes = {
         legacy_lazy_load = no
     }
     spriteType = {
-        name = "GFX_2b24_shine"
+        name = "GFX_minomet_shine"
         texturefile = "gfx/interface/goals/UKR/2b24.dds"
         effectFile = "gfx/FX/buttonstate.lua"
         animation = {
