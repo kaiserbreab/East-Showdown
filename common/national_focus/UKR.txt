@@ -436,6 +436,31 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = UKR_increase_the_production_of_BMP_in_Kharkov
+		icon = GFX_bmp123
+		prerequisite = { focus = UKR_Upgrading_bmp-1 }
+		x = -10
+
+		y = 3
+		available = {
+			controls_state = 103
+		}
+		relative_position_id = UKR_Ground_forces
+		cost = 0.5
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+        has_war_support > 0.5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 10
+			}
+		}
+	}
+	focus = {
 		id = UKR_Upgrading_bmp-2
 		icon = GFX_bmp123
 		prerequisite = { focus = UKR_Upgrading_bmp-1 }
@@ -509,6 +534,25 @@ focus_tree = {
 		    add_ideas = Burivey
 	    }
 	}
+	focus = {
+		id = UKR_Produce_mor_RCZO_OLXAM
+		icon = GFX_BURIVEY
+		prerequisite = { focus = UKR_Produce_mor_MLRS_Bureviy }
+		x = -2
+
+		y = 3
+		relative_position_id = UKR_Ground_forces
+		cost = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+        add_ideas = OlxaM
+		}
+		}
 
 						focus = {
 		id = UKR_Produce_BTR-3e

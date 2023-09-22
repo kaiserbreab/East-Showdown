@@ -59,6 +59,11 @@
  UKR_Msta_B_desc: "Производство "Мста Б""
  UKR_quartering_old_Soviet_warehouses: "расквартирование старых советских складов "
  UKR_quartering_old_Soviet_warehouses_desc: "расквартирование старых советских складов "
+ UKR_Produce_mor_RCZO_OLXAM: "Производство "РСЗО Ольха-М"
+ UKR_Produce_mor_RCZO_OLXAM_desc: " украинская реактивная система залпового огня (РСЗО) с новым корректируемым боеприпасом, созданная с использованием некоторых элементов советской
+ РСЗО 9К58 «Смерч»"
+ UKR_increase_the_production_of_BMP_in_Kharkov: "Начать Производство БМП в Харькове"
+ UKR_increase_the_production_of_BMP_in_Kharkov_desc: "Начать Производство БМП в Харькове"
 
  UKR_Request_Challengers: "Запросить Challenger"
  UKR_Request_Challengers_desc: "Запросить Challenger"
