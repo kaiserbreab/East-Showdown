@@ -388,7 +388,7 @@ focus_tree = {
 	}
 	focus = {
 		id = UKR_Msta_B
-		icon = GFX_404
+		icon = GFX_MSTA_byks
 		prerequisite = { focus = UKR_Stugna }
 		x = -5
 
