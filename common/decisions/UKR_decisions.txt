@@ -9235,10 +9235,11 @@ UKR_OC_east_category = {
 		has_completed_focus = UKR_OC_east
 		}
 		cost = 60
+		days_remove = 15
 		ai_will_do = {
 			factor = 10
 		}
-		complete_effect = {
+		remove_effect = {
 			add_command_power = 30
 	    }
 	}
@@ -9258,6 +9259,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		  }
+		days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9276,6 +9278,10 @@ UKR_OC_east_category = {
 		}
 		complete_effect = {
 			246 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
 			add_dynamic_modifier = {
 				scope = UKR
 				modifier = ukr_podgotovka_oborony
@@ -9299,6 +9305,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9340,6 +9347,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9381,6 +9389,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9422,6 +9431,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9463,6 +9473,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9509,6 +9520,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9556,6 +9568,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9602,6 +9615,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9648,6 +9662,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9694,6 +9709,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9740,6 +9756,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9786,6 +9803,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9832,6 +9850,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9878,6 +9897,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9919,6 +9939,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -9960,6 +9981,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10001,6 +10023,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10042,6 +10065,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10083,6 +10107,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10124,6 +10149,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10165,6 +10191,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10206,6 +10233,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10246,6 +10274,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10286,6 +10315,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10326,6 +10356,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10366,6 +10397,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10406,6 +10438,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10446,6 +10479,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 	    custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10486,6 +10520,7 @@ UKR_OC_east_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_east
 		}
+		days_remove = 30
 		custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10521,10 +10556,11 @@ UKR_OC_south_category = {
 		has_completed_focus = UKR_OC_south
 		}
 		cost = 60
+		days_remove = 15
 		ai_will_do = {
 			factor = 10
 		}
-		complete_effect = {
+		remove_effect = {
 			add_command_power = 30
 	    }
 	}
@@ -10543,6 +10579,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10584,6 +10621,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10625,6 +10663,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10666,6 +10705,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10707,6 +10747,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10748,6 +10789,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10789,6 +10831,7 @@ UKR_OC_south_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_south 
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -10830,6 +10873,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -10871,6 +10915,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -10912,6 +10957,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -10958,6 +11004,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -11004,6 +11051,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -11050,6 +11098,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -11096,6 +11145,7 @@ UKR_OC_south_category = {
 	avaible = {
 		has_completed_focus = UKR_OC_south 
 	  }
+	  days_remove = 30
 	  custom_cost_trigger = {
 		command_power > 24
 		has_political_power > 24
@@ -11131,10 +11181,11 @@ UKR_OC_north_category = {
 		has_completed_focus = UKR_OC_north
 		}
 		cost = 60
+		days_remove = 15
 		ai_will_do = {
 			factor = 10
 		}
-		complete_effect = {
+		remove_effect = {
 			add_command_power = 30
 	    }
 	}
@@ -11153,6 +11204,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11194,6 +11246,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11235,6 +11288,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11276,6 +11330,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11317,6 +11372,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11358,6 +11414,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11399,6 +11456,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11440,6 +11498,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11481,6 +11540,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11522,6 +11582,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11563,6 +11624,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11604,6 +11666,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11645,6 +11708,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11686,6 +11750,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11727,6 +11792,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11768,6 +11834,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11809,6 +11876,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11850,6 +11918,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11891,6 +11960,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11932,6 +12002,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -11973,6 +12044,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -12014,6 +12086,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
@@ -12055,6 +12128,7 @@ UKR_OC_north_category = {
 		avaible = {
 			has_completed_focus = UKR_OC_north
 		  }
+		  days_remove = 30
 		  custom_cost_trigger = {
 			command_power > 24
 			has_political_power > 24
