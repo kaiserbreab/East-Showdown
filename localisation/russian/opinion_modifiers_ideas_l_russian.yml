@@ -17,3 +17,7 @@
 #Контр наступ
 
 UKR_Counteroffensive_modifier: "Контрнаступление"
+
+#Модификаторы Генштаба
+ukr_podgotovka_oborony: "Спланировать оборону"
+ukr_podgotovka_nastypleniya: "Спланировать наступление"

@@ -199,5 +199,35 @@ UKR_destroy_oligarchate_category = {
 	visible = { 
 		ruling_party = fascism
 	}
-	visible_when_empty = yes
+	visible_when_empty = no
+}
+UKR_OC_east_category = {
+	icon = decision_cat_picture_SWI_military_readiness_decisions
+	allowed = {
+		original_tag = UKR
+	}
+	visible = { 
+		ruling_party = neutrality
+	}
+	visible_when_empty = no
+}
+UKR_OC_south_category = {
+	icon = decision_cat_picture_SWI_military_readiness_decisions
+	allowed = {
+		original_tag = UKR
+	}
+	visible = { 
+		ruling_party = neutrality
+	}
+	visible_when_empty = no
+}
+UKR_OC_north_category = {
+	icon = decision_cat_picture_SWI_military_readiness_decisions
+	allowed = {
+		original_tag = UKR
+	}
+	visible = { 
+		ruling_party = neutrality
+	}
+	visible_when_empty = no
 }

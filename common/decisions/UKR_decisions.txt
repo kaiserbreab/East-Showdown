@@ -9227,3 +9227,2858 @@ UKR_destroy_oligarchate_category = {
 		}	
 	}
 }
+UKR_OC_east_category = {
+    UKR_planning_plans_east = {
+		icon = decision_category_generic_arms_trade
+		fire_only_once = no
+		visible = {
+		has_completed_focus = UKR_OC_east
+		}
+		cost = 60
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_command_power = 30
+	    }
+	}
+	
+	UKR_Melitopol_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 246
+			tag = UKR
+			246 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 246
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			246 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+	        }
+	    }
+	}
+	UKR_Vasylivka_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 226
+			tag = UKR
+			226 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 226
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			226 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Berdyansk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 242
+			tag = UKR
+			242 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 242
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			242 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Pology_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 223
+			tag = UKR
+			223 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 223
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			223 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Zaporozhye_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 208
+			tag = UKR
+			208 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 208
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			208 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_pravy_bereg_Zaporozhye_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 210
+			tag = UKR
+			210 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 210
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			210 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Mariupol_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 237
+			tag = UKR
+			237 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+		    }
+		}
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 237
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			237 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	
+	UKR_Volnovakha_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 213
+			tag = UKR
+			213 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		}
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 213
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			213 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Pokrovsk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 182
+			tag = UKR
+			182 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 182
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			182 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Bakhmut_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 165
+			tag = UKR
+			165 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 165
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			165 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Kramatorsk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 149
+			tag = UKR
+			149 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 149
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			149 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Severodonetsk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 145
+			tag = UKR
+			145 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 145
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			145 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Shastya_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 154
+			tag = UKR
+			154 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 154
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			154 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Starobelsk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 125
+			tag = UKR
+			125 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 125
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			125 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Svatovo_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 116
+			tag = UKR
+			116 = {
+				any_neighbor_state = {
+					controller = {
+						OR = {
+							is_in_faction_with = RUS
+							is_puppet_of = RUS
+						}
+					}
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 116
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			116 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Borova_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 139
+			tag = UKR
+			139 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 139
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			139 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Kupyansk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 107
+			tag = UKR
+			107 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 107
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			107 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Chuguiv_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 100
+			tag = UKR
+			100 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 100
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			100 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Izum_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 133
+			tag = UKR
+			133 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 133
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			133 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Lozova_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 138
+			tag = UKR
+			138 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 138
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			138 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Kharkov_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 103
+			tag = UKR
+			103 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 103
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			103 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Bogodukhov_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 101
+			tag = UKR
+			101 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 101
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			101 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Krasnograd_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_east
+			controls_state = 130
+			tag = UKR
+			130 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 130
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			130 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Synelnykovo_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 180
+			tag = UKR
+			180 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 180
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			180 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Pavlograd_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 162
+			tag = UKR
+			162 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 162
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			162 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Novomoskovsk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 151
+			tag = UKR
+			151 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 151
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			151 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Dnepr_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 187
+			tag = UKR
+			187 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 187
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			187 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Nikopol_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 216
+			tag = UKR
+			216 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 216
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			216 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+	UKR_Kryvy_Rig_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 197
+			tag = UKR
+			197 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+	    custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 197
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+		    197 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+    UKR_Kamenskoe_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			controls_state = 169
+			tag = UKR
+			169 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_east
+		}
+		custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 169
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+		    169 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}	
+}
+UKR_OC_south_category = {
+	UKR_planning_plans_south = {
+		icon = decision_category_generic_arms_trade
+		fire_only_once = no
+		visible = {
+		has_completed_focus = UKR_OC_south
+		}
+		cost = 60
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_command_power = 30
+	    }
+	}
+	UKR_Genichesk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 251
+			tag = UKR
+			251 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 251
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			251 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	UKR_Kahovka_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 240
+			tag = UKR
+			240 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 240
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			240 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	UKR_Skadovsk_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 264
+			tag = UKR
+			264 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 264
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			264 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	UKR_Aleshky_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 262
+			tag = UKR
+			262 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 262
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			262 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	UKR_Kherson_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 253
+			tag = UKR
+			253 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 253
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			253 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	UKR_Berislav_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 231
+			tag = UKR
+			231 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 231
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			231 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+		}
+	}
+	UKR_Bashtanka_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_south
+			controls_state = 215
+			tag = UKR
+			215 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+		    }
+		avaible = {
+			has_completed_focus = UKR_OC_south 
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 215
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			215 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	}
+  }
+  UKR_Mykolaiv_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 233
+		tag = UKR
+		233 = {
+			any_neighbor_state = {
+				is_controlled_by = RUS
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 233
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		233 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+  UKR_Voznesensk_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 209
+		tag = UKR
+		209 = {
+			any_neighbor_state = {
+				is_controlled_by = RUS
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 209
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		209 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+  UKR_Pervomaisk_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 202
+		tag = UKR
+		202 = {
+			any_neighbor_state = {
+				is_controlled_by = RUS
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 202
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		202 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+  UKR_Odessa_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 256
+		tag = UKR
+		256 = {
+			any_neighbor_state = {
+				controller = {
+					OR = {
+						is_in_faction_with = RUS
+						is_puppet_of = RUS
+					}
+				}
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 256
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		256 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+  UKR_Berezovka_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 227
+		tag = UKR
+		227 = {
+			any_neighbor_state = {
+				controller = {
+					OR = {
+						is_in_faction_with = RUS
+						is_puppet_of = RUS
+					}
+				}
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 227
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		227 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+  UKR_Rozdilna_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 235
+		tag = UKR
+		235 = {
+			any_neighbor_state = {
+				controller = {
+					OR = {
+						is_in_faction_with = RUS
+						is_puppet_of = RUS
+					}
+				}
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 235
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		235 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+  UKR_Podolsk_defence = {
+	icon = decision_category_generic_arms_trade
+	visible = {
+		has_completed_focus = UKR_OC_south
+		controls_state = 203
+		tag = UKR
+		203 = {
+			any_neighbor_state = {
+				controller = {
+					OR = {
+						is_in_faction_with = RUS
+						is_puppet_of = RUS
+					}
+				}
+			}
+		  }
+		}
+	avaible = {
+		has_completed_focus = UKR_OC_south 
+	  }
+	  custom_cost_trigger = {
+		command_power > 24
+		has_political_power > 24
+	}
+	custom_cost_text = decision_cost_CP_25_pp_25
+	on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 203
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+	ai_will_do = {
+		factor = 10
+	}
+	complete_effect = {
+		203 = {
+		add_dynamic_modifier = {
+			scope = UKR
+			modifier = ukr_podgotovka_oborony
+			days = 30
+		}
+	}
+   }
+  }
+}
+UKR_OC_north_category = {
+	UKR_planning_plans_north = {
+		icon = decision_category_generic_arms_trade
+		fire_only_once = no
+		visible = {
+		has_completed_focus = UKR_OC_north
+		}
+		cost = 60
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			add_command_power = 30
+	    }
+	}
+	UKR_Ahtyrka_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 89
+			tag = UKR
+			89 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 89
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			89 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Sumy_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 72
+			tag = UKR
+			72 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 72
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			72 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Romny_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 82
+			tag = UKR
+			82 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 82
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			82 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Konotop_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 66
+			tag = UKR
+			66 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 66
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			66 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Shostka_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 57
+			tag = UKR
+			57 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 57
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			57 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Novgorod_Seversky_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 56
+			tag = UKR
+			56 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 56
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			56 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Korykiv_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 60
+			tag = UKR
+			60 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 60
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			60 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Nizhyn_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 69
+			tag = UKR
+			69 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 69
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			69 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Pryluky_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 80
+			tag = UKR
+			80 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 80
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			80 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Chernigov_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 59
+			tag = UKR
+			59 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 59
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			59 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Brovary_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 87
+			tag = UKR
+			87 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 87
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			87 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Obyhiv_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 106
+			tag = UKR
+			106 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 106
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			106 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Boryspil_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 98
+			tag = UKR
+			98 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 98
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			98 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Left_Kyiv_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 95
+			tag = UKR
+			95 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 95
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			95 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Kyiv_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 94
+			tag = UKR
+			94 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 94
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			94 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Fastov_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 104
+			tag = UKR
+			104 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 104
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			104 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Bila_Tserkva_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 115
+			tag = UKR
+			115 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 115
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			115 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Bucha_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 86
+			tag = UKR
+			86 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 86
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			86 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Vyshgorod_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 73
+			tag = UKR
+			73 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 73
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			73 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Korosten_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 67
+			tag = UKR
+			67 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 67
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			67 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Zvyagel_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 81
+			tag = UKR
+			81 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 81
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			81 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Zhytomyr_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 88
+			tag = UKR
+			88 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 88
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			88 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+	  UKR_Bedrychiv_defence = {
+		icon = decision_category_generic_arms_trade
+		visible = {
+			has_completed_focus = UKR_OC_north
+	        controls_state = 114
+			tag = UKR
+			114 = {
+				any_neighbor_state = {
+					is_controlled_by = RUS
+				}
+			  }
+			}
+		avaible = {
+			has_completed_focus = UKR_OC_north
+		  }
+		  custom_cost_trigger = {
+			command_power > 24
+			has_political_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_25
+		on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 114
+			}
+			highlight_color_while_active = 3
+			highlight_color_before_active = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			114 = {
+			add_dynamic_modifier = {
+				scope = UKR
+				modifier = ukr_podgotovka_oborony
+				days = 30
+			}
+		}
+	   }
+	  }
+}

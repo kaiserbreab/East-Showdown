@@ -2000,11 +2000,11 @@ focus = {
 	id = UKR_prava_molod
 	icon = GFX_404
 	prerequisite = {
-		focus = UKR_destroy_oligarchs
+		focus = UKR_pravy_fight_to_end
 	}
 	cost = 1
-	x = 33
-	y = 14
+	x = 31
+	y = 12
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -2018,11 +2018,11 @@ focus = {
 	id = UKR_take_items_corruptioners
 	icon = GFX_404
 	prerequisite = {
-		focus = UKR_prava_molod
+		focus = UKR_destroy_oligarchs
 	}
 	cost = 1
 	x = 33
-	y = 15
+	y = 14
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -2042,7 +2042,7 @@ focus = {
 	}
 	cost = 1
 	x = 33
-	y = 16
+	y = 15
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -4645,7 +4645,7 @@ focus = {
 	mutually_exclusive = {
 	focus = UKR_kryvonos
 	}
-	x = 25
+	x = 23
 	y = 10
 	completion_reward = {
 		UKR_genshtab_VSY = {
@@ -4667,7 +4667,7 @@ focus = {
 	mutually_exclusive = {
 		focus = UKR_zalusniy
 	}
-	x = 27
+	x = 25
 	y = 10
 	completion_reward = {
 		UKR_genshtab_VSY = {
@@ -4678,6 +4678,69 @@ focus = {
 			promote_character = yes
 		}
 	}
+}
+
+focus = {
+	id = UKR_OC_east
+	icon = GFX_404
+	cost = 1
+	prerequisite = {
+		focus = UKR_kryvonos
+		focus = UKR_zalusniy
+	}
+	x = 19
+	y = 11
+	completion_reward = {
+		add_political_power = 100
+		add_command_power = 50
+		custom_effect_tooltip = UKR_OC_east_tooltip
+	}
+}
+
+focus = {
+	id = UKR_OC_south
+	icon = GFX_404
+	cost = 1
+	prerequisite = {
+		focus = UKR_kryvonos
+		focus = UKR_zalusniy
+	}
+	x = 21
+	y = 11
+	completion_reward = {
+		add_political_power = 100
+		add_command_power = 50
+		custom_effect_tooltip = UKR_OC_south_tooltip
+	}
+}
+
+focus = {
+	id = UKR_OC_north
+	icon = GFX_404
+	cost = 1
+	prerequisite = {
+		focus = UKR_kryvonos
+		focus = UKR_zalusniy
+	}
+	x = 23
+	y = 11
+	completion_reward = {
+		add_political_power = 100
+		add_command_power = 50
+		custom_effect_tooltip = UKR_OC_north_tooltip
+	}
+}
+
+focus = {
+	id = UKR_OC_west
+	icon = GFX_404
+	cost = 1
+	prerequisite = {
+		focus = UKR_kryvonos
+		focus = UKR_zalusniy
+	}
+	x = 25
+	y = 11
 }
 
 focus = {
