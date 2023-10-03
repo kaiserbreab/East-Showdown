@@ -3910,6 +3910,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			205 = {
                 damage_building = {
                     type = arms_factory
@@ -4032,6 +4044,17 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			237 = {
 				damage_building = {
                     type = arms_factory
@@ -4150,6 +4173,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			242 = {
 				damage_building = {
                     type = arms_factory
@@ -4268,6 +4303,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			246 = {
 				damage_building = {
                     type = arms_factory
@@ -4386,6 +4433,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			413 = {
 				damage_building = {
                     type = arms_factory
@@ -4504,6 +4563,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			262 = {
 				damage_building = {
                     type = arms_factory
@@ -4622,6 +4693,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			251 = {
 				damage_building = {
                     type = arms_factory
@@ -4740,6 +4823,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			264 = {
 				damage_building = {
                     type = arms_factory
@@ -4858,6 +4953,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			231 = {
 				damage_building = {
                     type = arms_factory
@@ -4976,6 +5083,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			253 = {
 				damage_building = {
                     type = arms_factory
@@ -5094,6 +5213,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			223 = {
 				damage_building = {
                     type = arms_factory
@@ -5212,6 +5343,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			226 = {
 				damage_building = {
                     type = arms_factory
@@ -5330,6 +5473,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			208 = {
 				damage_building = {
                     type = arms_factory
@@ -5448,6 +5603,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			221 = {
 				damage_building = {
                     type = arms_factory
@@ -5566,6 +5733,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			213 = {
 				damage_building = {
                     type = arms_factory
@@ -5684,6 +5863,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			182 = {
 				damage_building = {
                     type = arms_factory
@@ -5802,6 +5993,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			189 = {
 				damage_building = {
                     type = arms_factory
@@ -5920,6 +6123,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			165 = {
 				damage_building = {
                     type = arms_factory
@@ -6035,6 +6250,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			149 = {
 				damage_building = {
                     type = arms_factory
@@ -6153,6 +6380,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			145 = {
 				damage_building = {
                     type = arms_factory
@@ -6271,6 +6510,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			293 = {
 				damage_building = {
                     type = arms_factory
@@ -6389,6 +6640,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			172 = {
 				damage_building = {
                     type = arms_factory
@@ -6507,6 +6770,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			194 = {
 				damage_building = {
                     type = arms_factory
@@ -6625,6 +6900,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			173 = {
 				damage_building = {
                     type = arms_factory
@@ -6743,6 +7030,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			183 = {
 				damage_building = {
                     type = arms_factory
@@ -6861,6 +7160,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			116 = {
 				damage_building = {
                     type = arms_factory
@@ -6979,6 +7290,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			125 = {
 				damage_building = {
                     type = arms_factory
@@ -7097,6 +7420,18 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
+			RUS = {
+				set_temp_variable = { temp_var = 10 }
+				set_variable_to_random = {
+					var = temp_var 
+					min = 1000
+					max = 30000
+					integer = yes
+				}
+				subtract_from_variable = {
+					ammunition_variable = temp_var
+				}
+			}
 			154 = {
 				damage_building = {
                     type = arms_factory
