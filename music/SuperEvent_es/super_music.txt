@@ -12,6 +12,12 @@ music = {
 	}
 }
 music = {
+	song = "bakhmut_taken"
+	chance = {
+		factor = 0
+	}
+}
+music = {
 	song = "WGN_bakhmut_taken"
 	chance = {
 		factor = 0
@@ -31,6 +37,12 @@ music = {
 }
 music = {
 	song = "Russia_particulation_mobilization"
+	chance = {
+		factor = 0
+	}
+}
+music = {
+	song = "Belarus_Tikhonovskaya_in_power"
 	chance = {
 		factor = 0
 	}
