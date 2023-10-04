@@ -36,9 +36,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 205
-			}
+			highlight_state_targets = { state = 205 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -70,92 +68,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			205 = {
-                damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 2
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			205 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				205 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 205
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 205 }
 					}
 				}
 			}
-			set_variable = {
-					var = new_himars_shelling
-					value = 205
-			}
+
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -170,9 +97,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 237
-			}
+			highlight_state_targets = { state = 237 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -204,88 +129,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			237 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			237 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				237 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 237
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 237 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -303,9 +161,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 242
-			}
+			highlight_state_targets = { state = 242 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -334,88 +190,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			242 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			242 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				242 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 242
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 242 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -433,9 +222,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 246
-			}
+			highlight_state_targets = { state = 246 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -464,88 +251,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			246 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			246 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				246 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 246
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 246 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -563,9 +283,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 413
-			}
+			highlight_state_targets = { state = 413 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -594,88 +312,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			413 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			413 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				413 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 413
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 413 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -693,9 +344,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 262
-			}
+			highlight_state_targets = { state = 262 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -724,88 +373,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			262 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			262 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				262 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 262
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 262 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -823,9 +405,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 251
-			}
+			highlight_state_targets = { state = 251 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -854,88 +434,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			251 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			251 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				251 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 251
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 251 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -953,9 +466,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 264
-			}
+			highlight_state_targets = { state = 264 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -984,89 +495,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			264 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			264 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				264 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 264
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 264 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1083,9 +528,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 231
-			}
+			highlight_state_targets = { state = 231 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1114,89 +557,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			231 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			231 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				231 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 231
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 231 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1213,9 +590,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 253
-			}
+			highlight_state_targets = { state = 253 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1244,89 +619,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			253 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			253 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				253 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 253
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 253 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1343,9 +652,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 223
-			}
+			highlight_state_targets = { state = 223 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1374,89 +681,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			223 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			223 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				223 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 223
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 223 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1473,9 +714,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 226
-			}
+			highlight_state_targets = { state = 226 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1504,89 +743,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			226 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			226 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				226 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 226
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 226 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1603,9 +776,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 208
-			}
+			highlight_state_targets = { state = 208 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1634,89 +805,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			208 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			208 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				208 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 208
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 208 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1733,9 +838,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 221
-			}
+			highlight_state_targets = { state = 221 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1764,89 +867,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			221 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			221 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				221 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 221
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 221 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1863,9 +900,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 213
-			}
+			highlight_state_targets = { state = 213 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -1894,89 +929,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			213 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			213 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				213 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 213
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 213 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -1993,9 +962,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 182
-			}
+			highlight_state_targets = { state = 182 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2024,89 +991,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			182 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			182 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				182 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 182
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 182 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2123,9 +1024,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 189
-			}
+			highlight_state_targets = { state = 189 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2154,89 +1053,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			189 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			189 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				189 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 189
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 189 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2253,9 +1086,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 165
-			}
+			highlight_state_targets = { state = 165 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2284,89 +1115,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			165 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			165 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				165 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 165
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 165 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2380,9 +1145,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 149
-			}
+			highlight_state_targets = { state = 149 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2411,89 +1174,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			149 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			149 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				149 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 149
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 149 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2510,9 +1207,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 145
-			}
+			highlight_state_targets = { state = 145 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2541,89 +1236,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			145 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			145 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				145 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 145
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 145 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2640,9 +1269,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 293
-			}
+			highlight_state_targets = { state = 293 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2671,89 +1298,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			293 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			293 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				293 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 293
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 293 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2770,9 +1331,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 172
-			}
+			highlight_state_targets = { state = 172 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2801,89 +1360,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			172 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			172 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				172 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 172
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 172 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -2900,9 +1393,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 194
-			}
+			highlight_state_targets = { state = 194 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -2931,89 +1422,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			194 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			194 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				194 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 194
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 194 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -3030,9 +1455,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 173
-			}
+			highlight_state_targets = { state = 173 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -3061,89 +1484,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			173 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			173 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				173 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 173
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 173 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -3160,9 +1517,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 183
-			}
+			highlight_state_targets = { state = 183 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -3191,88 +1546,21 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			183 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			183 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				183 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 183
-						}
+						country_himars_strike_random_event_effect = yes
+						set_variable = { new_himars_shelling = 183 }
 					}
 				}
 			}
+			
 			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
@@ -3290,9 +1578,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 116
-			}
+			highlight_state_targets = { state = 116 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -3321,89 +1607,23 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			116 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			116 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				116 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 116
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 116 }
 						}
 					}
 				}
-			}
-			set_country_flag = UKR_himars_cooldown_flag
+				
+				set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
@@ -3420,9 +1640,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 125
-			}
+			highlight_state_targets = { state = 125 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -3451,90 +1669,24 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			125 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			125 = { state_himars_damage_effect = yes }
+
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
 					
 				125 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 125
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 125 }
 						}
 					}
 				}
+				
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			set_country_flag = UKR_himars_cooldown_flag
-		}
 		fire_only_once = no
 	}
 	
@@ -3550,9 +1702,7 @@ UKR_Himars = {
 		days_remove = 30
 		on_map_mode = map_only
 		highlight_states = {
-			highlight_state_targets = {
-				state = 154
-			}
+			highlight_state_targets = { state = 154 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
@@ -3581,49 +1731,8 @@ UKR_Himars = {
 		}
 
 		complete_effect = {
-			RUS = {
-				set_temp_variable = { ammo_loss = 0 }
-				set_temp_variable_to_random = {
-					var = ammo_loss 
-					min = 0
-					max = 30
-					integer = yes
-				}
-				subtract_from_variable = {
-					ammunition_variable = ammo_loss
-				}
-			}
-			154 = {
-				damage_building = {
-                    type = arms_factory
-                    damage = 1
-                }
-				damage_building = {
-                    type = infrastructure
-                    damage = 1
-                }
-				damage_building = {
-                    type = industrial_complex
-                    damage = 1
-                }
-				damage_building = {
-                    type = rail_way
-                    damage = 3
-                }
-				damage_building = {
-                    type = anti_air_building
-                    damage = 1
-                }
-				damage_building = {
-                    type = supply_node
-                    damage = 1
-                }
-				add_dynamic_modifier = {
-					scope = RUS
-					modifier = himars_shelling
-					days = 14
-				}
-            }
+			RUS = { country_himars_random_ammo_loss_effect = yes }
+			154 = { state_himars_damage_effect = yes }
 			
 			custom_effect_tooltip = UKR_tt_Himars2
 			
@@ -3631,41 +1740,16 @@ UKR_Himars = {
 					
 				154 = {
 					controller = {
-						random_list = {
-							1 = {
-								country_event = {
-									id = rus.63
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.64
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.65
-									days = 1
-								}
-							}
-							1 = {
-								country_event = {
-									id = rus.66
-									days = 1
-								}
-							}
-						}
-						set_variable = {
-							var = new_himars_shelling
-							value = 154
+						controller = {
+							country_himars_strike_random_event_effect = yes
+							set_variable = { new_himars_shelling = 154 }
 						}
 					}
 				}
+				
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			set_country_flag = UKR_himars_cooldown_flag
+			fire_only_once = no
 		}
-		fire_only_once = no
 	}
 }

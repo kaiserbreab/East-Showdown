@@ -1,0 +1,90 @@
+state_himars_damage_effect = {
+	damage_building = {
+		type = arms_factory
+		damage = 1
+	}
+	damage_building = {
+		type = infrastructure
+		damage = 1
+	}
+	damage_building = {
+		type = industrial_complex
+		damage = 1
+	}
+	damage_building = {
+		type = rail_way
+		damage = 3
+	}
+	damage_building = {
+		type = anti_air_building
+		damage = 1
+	}
+	damage_building = {
+		type = supply_node
+		damage = 1
+	}
+	add_dynamic_modifier = {
+		scope = RUS
+		modifier = himars_shelling
+		days = 14
+	}
+}
+
+country_himars_random_ammo_loss_effect = {
+	if = { #Если у страны ещё не приняты меры по защите от ударов по складам Химарсами
+		limit = {
+			NOT = {
+				has_country_flag = himars_ammo_silo_protection
+			}
+		}
+
+		#Выполнить потерю боеприпасов на полевом складе
+		set_temp_variable = { ammo_loss = 0 }
+		set_temp_variable_to_random = {
+			var = ammo_loss 
+			min = 10
+			max = 30
+			integer = yes
+		}
+		subtract_from_variable = {
+			ammunition_variable = ammo_loss
+		}
+		
+		set_country_flag = himars_ammo_silo_striked
+
+		#Отображаем ивент на удар по полевому складу
+		country_event = {
+			id = generic.3
+			days = 1
+		}
+	}
+}
+
+country_himars_strike_random_event_effect = {
+	random_list = {
+		1 = {
+			country_event = {
+				id = rus.63
+				days = 1
+			}
+		}
+		1 = {
+			country_event = {
+				id = rus.64
+				days = 1
+			}
+		}
+		1 = {
+			country_event = {
+				id = rus.65
+				days = 1
+			}
+		}
+		1 = {
+			country_event = {
+				id = rus.66
+				days = 1
+			}
+		}
+	}
+}
