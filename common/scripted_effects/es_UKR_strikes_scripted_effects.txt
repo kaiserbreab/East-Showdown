@@ -63,7 +63,7 @@ country_himars_random_ammo_loss_effect = {
 				days = 1
 			}
 		}
-		else {
+		else = {
 			set_country_flag = himars_ammo_silo_striked
 			#Отображаем ивент на последующие удары по полевым складам
 			country_event = {
