@@ -1,0 +1,17 @@
+generic_ammo_silo_protection = {
+    icon = generic_formable_nations
+
+    priority = 10 # i dont know what this does but dont change it
+
+    visible_when_empty = yes
+    allowed = {
+		always = yes
+	}
+
+    visible = {
+		has_country_flag = himars_ammo_silo_striked
+		NOT = {
+			has_country_flag = himars_ammo_silo_protection
+		}
+    }
+}

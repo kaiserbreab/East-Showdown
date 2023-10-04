@@ -1,5 +1,17 @@
 debug_category = {
-	
+
+	#Ukraine
+	UKR_allow_himars = {
+		icon = generic_formable_nations
+		fire_only_once = no
+		visible = {
+			original_tag = UKR
+		}
+		complete_effect = {
+			set_country_flag = UKR_himars_allowed
+		}
+	}
+
 	#Russia
 	RUS_load_second_focus_tree = {
 		icon = generic_formable_nations

@@ -43,6 +43,19 @@ country_event = {
 
 	option = {
 		name = generic.3.a
-		#TODO Сделать страт миссии на разработку способов защиты от ударов
+		activate_mission = generic_protect_ammo_silo_mission
+	}
+}
+
+#Ивент после повторных ударов Химарсом
+country_event = {
+	id = generic.4
+    title = generic.4.t
+	desc = generic.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.4.a
 	}
 }

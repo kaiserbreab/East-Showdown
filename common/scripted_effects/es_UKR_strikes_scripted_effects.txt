@@ -49,14 +49,30 @@ country_himars_random_ammo_loss_effect = {
 		subtract_from_variable = {
 			ammunition_variable = ammo_loss
 		}
-		
-		set_country_flag = himars_ammo_silo_striked
 
-		#Отображаем ивент на удар по полевому складу
-		country_event = {
-			id = generic.3
-			days = 1
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = himars_ammo_silo_striked
+				}
+			}
+			
+			#Отображаем ивент на первый удар по полевому складу
+			country_event = {
+				id = generic.3
+				days = 1
+			}
 		}
+		else {
+			set_country_flag = himars_ammo_silo_striked
+			#Отображаем ивент на последующие удары по полевым складам
+			country_event = {
+				id = generic.4
+				days = 1
+			}
+		}
+		
+
 	}
 }
 
