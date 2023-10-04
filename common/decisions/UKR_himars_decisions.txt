@@ -3,68 +3,37 @@ UKR_Himars = {
 	
 	UKR_Himars_cooldown = {
 		icon = decision_category_generic_arms_trade
-		available = {
-			NOT = {
-				has_war_with = RUS
-			}
-		}
-		visible = {
-			has_war_with = RUS
-		}
-		ai_will_do = {
-			factor = 40
-		}
-		activation = {
-			has_country_flag = UKR_himars_cooldown_flag
-		}
-		timeout_effect = {
-			clr_country_flag = UKR_himars_cooldown_flag
-		}
+
+		available = { NOT = { has_war_with = RUS } }
+		visible = { has_war_with = RUS }
+
+		ai_will_do = { factor = 40 }
+		activation = { has_country_flag = UKR_himars_cooldown_flag }
+		timeout_effect = { clr_country_flag = UKR_himars_cooldown_flag }
 		days_mission_timeout = 2
 		days_remove = 0
-		allowed = {
-			original_tag = UKR
-		}
+
+		allowed = { original_tag = UKR }
 	}
 
 	UKR_Himars_Donetsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
+		visible = { original_tag = UKR }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 205 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		ai_will_do = { factor = 40 }
 		available = {
-			205 = {
-				controller = { 
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			205 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -74,58 +43,37 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				205 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 205 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Mariupol = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
+
+		visible = { original_tag = UKR }
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 237 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		ai_will_do = { factor = 40 }
+
 		available = {
-			237 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			237 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -135,58 +83,37 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				237 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 237 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Berdyansk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 242 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			242 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			242 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -196,58 +123,37 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				242 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 242 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Melitopol = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 246 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			246 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			246 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -257,58 +163,37 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				246 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 246 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Kahovka = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 413 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			240 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			240 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -318,28 +203,24 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				413 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 413 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Aleshki = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
@@ -348,28 +229,10 @@ UKR_Himars = {
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			262 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			262 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -379,58 +242,38 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				262 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 262 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Genichesk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 251 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			251 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			251 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -440,58 +283,37 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				251 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 251 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Skadovsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 264 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			264 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			264 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -501,7 +323,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				264 = {
 					controller = {
 						controller = {
@@ -510,50 +331,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Berislav = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 231 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			231 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			231 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -563,7 +365,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				231 = {
 					controller = {
 						controller = {
@@ -572,50 +373,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Kherson = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 253 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			253 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			253 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -625,7 +407,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				253 = {
 					controller = {
 						controller = {
@@ -634,50 +415,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Polohy = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 223 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			223 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			223 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -687,7 +449,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				223 = {
 					controller = {
 						controller = {
@@ -696,50 +457,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Vasilyvka = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 226 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			226 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			226 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -749,7 +491,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				226 = {
 					controller = {
 						controller = {
@@ -758,50 +499,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Zaporojia = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 208 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+		
 		available = {
-			208 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			208 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -811,7 +533,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				208 = {
 					controller = {
 						controller = {
@@ -820,50 +541,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Kalmiusskoe = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 221 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			221 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			221 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -873,7 +575,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				221 = {
 					controller = {
 						controller = {
@@ -882,50 +583,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Volnovaha = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 213 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			213 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			213 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -934,8 +616,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				213 = {
 					controller = {
 						controller = {
@@ -944,50 +625,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Pokrovsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+		
 		highlight_states = {
 			highlight_state_targets = { state = 182 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			182 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			182 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -997,7 +659,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				182 = {
 					controller = {
 						controller = {
@@ -1006,50 +667,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Gorlovka = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+		
 		highlight_states = {
 			highlight_state_targets = { state = 189 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			189 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			189 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1059,7 +701,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				189 = {
 					controller = {
 						controller = {
@@ -1068,50 +709,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Bakhmut = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 165 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			165 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			165 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1130,47 +752,30 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Kramatorsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 149 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
 		available = {
-			149 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			149 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1179,8 +784,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				149 = {
 					controller = {
 						controller = {
@@ -1189,50 +793,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Severodonetsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 145 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			145 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			145 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1241,8 +826,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				145 = {
 					controller = {
 						controller = {
@@ -1251,50 +835,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Stahanov = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 293 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			293 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			293 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1303,8 +868,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				293 = {
 					controller = {
 						controller = {
@@ -1313,50 +877,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Alchevsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = { original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+		
 		highlight_states = {
 			highlight_state_targets = { state = 172 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			172 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			172 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1366,7 +911,6 @@ UKR_Himars = {
 			custom_effect_tooltip = UKR_tt_Himars2
 			
 			hidden_effect = {
-					
 				172 = {
 					controller = {
 						controller = {
@@ -1375,50 +919,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Antratsit = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 194 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			194 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			194 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1427,8 +952,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				194 = {
 					controller = {
 						controller = {
@@ -1437,50 +961,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Lugansk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 173 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			173 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			173 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1489,8 +994,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				173 = {
 					controller = {
 						controller = {
@@ -1499,50 +1003,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Sverdlovsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 183 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			183 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			183 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1551,59 +1036,37 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				183 = {
 					controller = {
 						country_himars_strike_random_event_effect = yes
 						set_variable = { new_himars_shelling = 183 }
 					}
 				}
+				set_country_flag = UKR_himars_cooldown_flag
 			}
-			
-			set_country_flag = UKR_himars_cooldown_flag
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Svatovo = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 116 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
 		available = {
-			116 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			116 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1612,8 +1075,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				116 = {
 					controller = {
 						controller = {
@@ -1622,50 +1084,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
+			}
 		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Starobelsk = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 125 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			125 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			125 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1674,8 +1117,7 @@ UKR_Himars = {
 
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				125 = {
 					controller = {
 						controller = {
@@ -1684,50 +1126,31 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
 			}
+		}
 		fire_only_once = no
 	}
 	
 	UKR_Himars_Schastie = {
 		icon = decision_icon_himars
-		visible = {
-			original_tag = UKR
-		}
-		ai_will_do = {
-			factor = 40
-		}
+
+		visible = {	original_tag = UKR }
+		ai_will_do = { factor = 40 }
+
 		cost = 50
 		days_remove = 30
 		on_map_mode = map_only
+
 		highlight_states = {
 			highlight_state_targets = { state = 154 }
 			highlight_color_while_active = 3
 			highlight_color_before_active = 2
 		}
+
 		available = {
-			154 = {
-				controller = {
-					OR = {
-						is_in_faction_with = RUS
-						is_puppet_of = RUS
-					}
-				}
-				OR = {
-					any_neighbor_state = {
-						is_controlled_by = UKR
-					}
-					any_neighbor_state = {
-						any_neighbor_state = {
-							is_controlled_by = UKR
-						}
-					}
-				}
-			}
-			NOT = {
-				has_country_flag = UKR_himars_cooldown_flag
-			}
+			154 = { can_strike_with_himars = yes }
+			NOT = { has_country_flag = UKR_himars_cooldown_flag }
 		}
 
 		complete_effect = {
@@ -1736,8 +1159,7 @@ UKR_Himars = {
 			
 			custom_effect_tooltip = UKR_tt_Himars2
 			
-			hidden_effect = {
-					
+			hidden_effect = {					
 				154 = {
 					controller = {
 						controller = {
@@ -1746,10 +1168,9 @@ UKR_Himars = {
 						}
 					}
 				}
-				
 				set_country_flag = UKR_himars_cooldown_flag
 			}
-			fire_only_once = no
 		}
+		fire_only_once = no
 	}
 }

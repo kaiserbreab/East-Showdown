@@ -1,0 +1,15 @@
+can_strike_with_himars = {
+	controller = {
+		has_war_with = UKR
+	}
+	OR = {
+		any_neighbor_state = {
+			is_controlled_by = UKR
+		}
+		any_neighbor_state = {
+			any_neighbor_state = {
+				is_controlled_by = UKR
+			}
+		}
+	}
+}
