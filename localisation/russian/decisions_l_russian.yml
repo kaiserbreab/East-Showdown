@@ -16,6 +16,7 @@ RUS_loss_ammo: "Где боеприпасы?.."
 RUS_loss_ammo_desc: "У России 0 снарядов"
 RUS_have_ammo: "Шойгу наелся и спит"
 RUS_have_ammo_desc: "У России 10000000 снарядов"
+UKR_allow_himars: "Химарсы"
 ###техническое
  DECISIONVIEW_TITLE:0 "События и решения"
  DECISIONSVIEW_EVENT_HEADER:0 "События"
@@ -661,6 +662,8 @@ MOA_main: "МОА"
 RUS_border_zones: "Пограничные зоны"
 RUS_ban_border_zones: "Запретить создание пограничных зон"
 RUS_ban_border_zones_tooltip: "Будет запрещено создание пограничных зон"
+generic_ammo_silo_protection: "Обстрелы HIMARS"
+generic_protect_ammo_silo_mission: "Разработка мер по защите полевых складов боеприпасов"
 
 # Putin missions
 putin_missions: "Цели Путина"
