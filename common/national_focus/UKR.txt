@@ -30,6 +30,7 @@ focus_tree = {
 			
 		}
 		available = {
+			has_war = no
 		}
 
 
@@ -39,9 +40,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
-		completion_reward = {
-
-		}
 	}
 
 		focus = {
@@ -61,7 +59,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			army_experience = 100
+			army_experience = 200
 		}
 	}
 		focus = {
@@ -81,7 +79,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-
+			air_experience = 100
 		}
 	}
 
@@ -92,7 +90,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = UKR_Ukrainian_Air_Force
-		cost = 0.5
+		cost = 1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -104,7 +102,7 @@ focus_tree = {
 		completion_reward = {
             add_equipment_to_stockpile = {
 				type = ukr_fighter_equipment_1
-				amount = 15
+				amount = 30
 				producer = UKR
 			}
 		}
@@ -117,7 +115,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = UKR_Ukrainian_Air_Force
-		cost = 0.5
+		cost = 1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -129,7 +127,7 @@ focus_tree = {
 		completion_reward = {
             add_equipment_to_stockpile = {
 				type = ukr_fighter_equipment_2
-				amount = 15
+				amount = 30
 				producer = UKR
 			}
 		}
@@ -142,7 +140,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = UKR_Ukrainian_Air_Force
-		cost = 0.5
+		cost = 1
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -154,7 +152,7 @@ focus_tree = {
 		completion_reward = {
             add_equipment_to_stockpile = {
 				type = ukr_CAS_equipment_2	
-				amount = 25
+				amount = 30
 				producer = UKR
 			}
 		}
@@ -162,11 +160,11 @@ focus_tree = {
 
 
 
-					focus = {
-		id = UKR_MI-24_modernisation
-		icon = GFX_mi-24
+	focus = {
+		id = UKR_leleka_modernisation
+		icon = GFX_MIG-29B
 		prerequisite = { focus = UKR_Ukrainian_Air_Force }
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = UKR_Ukrainian_Air_Force
 		cost = 0.5
@@ -179,12 +177,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = ukr_hel_strike_equipment_1
-				amount = 25
+            add_equipment_to_stockpile = {
+				type = ukr_uav_recon_equipment_2
+				amount = 200
 				producer = UKR
 			}
-
 		}
 	}
 

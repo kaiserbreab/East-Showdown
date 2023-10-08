@@ -1631,17 +1631,17 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = engineering_equipment_0	
-	amount = 3500
+	amount = 3600
 	producer = UKR
 }
 add_equipment_to_stockpile = {
 	type = ARV_equipment_0	
-	amount = 3500
+	amount = 3600
 	producer = UKR
 }
 add_equipment_to_stockpile = {
 	type = AMV_equipment_0	
-	amount = 3500
+	amount = 3600
 	producer = UKR
 }
 
