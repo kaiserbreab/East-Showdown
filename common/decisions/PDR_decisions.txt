@@ -25,3 +25,26 @@ PDR_war_with_ukraine = {
 		}
 	}
 }
+PDR_Mobilisation = {
+	PDR_Mobilisation_lin = {
+		icon = generic_formable_nations
+
+		fire_only_once = yes 
+		days_remove = 5
+		cost = 80
+
+		available = {
+		original_tag = PDR
+		date > 2022.2.24
+		}
+
+		visible = {
+			original_tag = PDR
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = mobilisation_pdr_tooltip
+			add_manpower = 15000
+		}
+	}
+}

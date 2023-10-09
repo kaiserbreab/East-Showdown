@@ -888,9 +888,12 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
+			custom_effect_tooltip = pdr_mobilisation_boz_tooltip
+			hidden_effect={
 			load_oob = "PDR_mobilization"
-			add_manpower = 10000
-			add_stability = -0.15
+			}
+			add_manpower = 1000
+			add_stability = -0.1
 		}
 	}
 	focus = {
