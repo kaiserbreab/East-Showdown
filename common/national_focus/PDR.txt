@@ -287,10 +287,14 @@ focus_tree = {
 		search_filters = {  }
 
 		completion_reward = {
+			custom_effect_tooltip = pdr_wars_tooltip
+			hidden_effect = {
+				add_ideas = low_economic_mobilisation
+			  } 
 			country_event = {
 				id = pdr.3
 				days = 0
-			}
+		}
 		}
 	}
 	focus = {
@@ -926,6 +930,10 @@ focus_tree = {
 			}
 			add_ideas = PDR_toodessa_idea
 			news_event = news.134
+			custom_effect_tooltip = pdr_warss_tooltip
+			hidden_effect={
+				add_ideas = war_economy
+			}
 		}
 	}
 	focus = {
