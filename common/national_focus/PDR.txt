@@ -458,10 +458,9 @@ focus_tree = {
 			variant_name = "Бук-М2"
 			amount = 10
 			producer = RUS
+	    }
+    }
 	}
-}
-}
-
 	focus = {
 		id = pdr_war3
 		icon = GFX_IMAGE_NOT_FOUND
@@ -867,9 +866,9 @@ focus_tree = {
 			producer = RUS
 		}
 	
-	    }
+	 }
+	
     }
-}
 	focus = {
 		id = pdr_mobilization
 		icon = GFX_IMAGE_NOT_FOUND
@@ -918,22 +917,22 @@ focus_tree = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		search_filters = {  }
-
 		completion_reward = {
-			add_to_war = {
-				targeted_alliance = RUS
-				enemy = UKR
-				hostility_reason = asked_to_join
-			}
-			RUS = {
-				add_to_faction = PDR
-			}
-			add_ideas = PDR_toodessa_idea
-			news_event = news.134
 			custom_effect_tooltip = pdr_warss_tooltip
 			hidden_effect={
+				add_to_war = {
+					targeted_alliance = RUS
+					enemy = UKR
+					hostility_reason = asked_to_join
+				}
+				RUS = {
+					add_to_faction = PDR
+				}
+				add_ideas = PDR_toodessa_idea
+				news_event = news.134
 				add_ideas = war_economy
 			}
+			
 		}
 	}
 	focus = {
