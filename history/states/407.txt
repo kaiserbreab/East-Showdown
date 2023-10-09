@@ -16,6 +16,7 @@ state = {
 		
 		buildings = {
 			infrastructure = 2
+			ammunition_silo = 4
 		}
 		
 		add_core_of = PDR
