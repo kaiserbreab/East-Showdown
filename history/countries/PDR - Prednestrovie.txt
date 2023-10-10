@@ -6,11 +6,11 @@ set_research_slots = 1
 
 set_stability = 0.90
 
-set_war_support = 0.25
+set_war_support = 0.3
 
-add_political_power = 0
+add_political_power = 30
 
-set_convoys = 0
+set_convoys = 4
 
 set_popularities = {
 	democratic = 10
