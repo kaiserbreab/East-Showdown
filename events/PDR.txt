@@ -76,3 +76,28 @@ country_event = {
 		add_political_power = -50
     }
 }
+country_event = {
+    id = pdr.5
+    title = pdr.5.t
+    desc = pdr.5.desc
+	trigger = {
+        PDR = {
+            has_war_with = UKR
+        }
+		tag = PDR
+    }
+	mean_time_to_happen = {
+        days = 5
+    }
+    fire_only_once = yes
+	is_triggered_only = no
+	
+    option = {
+        name = pdr.5.a
+		add_stability = 0.01
+		add_political_power = 50
+        PDR = {
+			complete_national_focus = pdr_mir
+		}
+    }
+}
