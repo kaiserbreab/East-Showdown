@@ -48,3 +48,17 @@ PDR_Mobilisation = {
 		}
 	}
 }
+PDR_landing_in_Ukraine = {
+	PDR_visodka = {
+		icon = generic_formable_nations
+
+	cost = 100
+	days_remove = 1
+	ai_will_do = {
+		factor = 40
+	}
+	remove_effect = {
+		load_oob = odessa_PDR
+	}
+ 	}
+}

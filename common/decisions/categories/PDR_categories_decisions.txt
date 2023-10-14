@@ -24,3 +24,15 @@ PDR_Mobilisation = {
 	priority = 120
 
 }
+PDR_landing_in_Ukraine = {
+	icon = decision_cat_picture_SWI_military_readiness_decisions
+	
+	visible_when_empty = yes
+	allowed = {
+		original_tag = PDR
+	}
+    visible = {
+			has_war_with = UKR
+	}
+	visible_when_empty = no
+}

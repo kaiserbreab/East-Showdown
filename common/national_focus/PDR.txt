@@ -758,7 +758,7 @@ focus_tree = {
 				producer = RUS
 			}
 			add_equipment_to_stockpile = {
-				type = infantry_anti_tank_equipment
+				type = infantry_anti_tank_equipment_1	
 				amount = 1500
 				producer = RUS
 			}
@@ -773,8 +773,14 @@ focus_tree = {
 				producer = RUS
 			}
 			add_equipment_to_stockpile = {
-				type = btr_equipment
-				amount = 350
+				type = btr2_chassis
+				variant_name = "БТР-80 БМ"
+				amount = 600
+				producer = RUS
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1	
+				amount = 1000
 				producer = RUS
 			}
 			add_equipment_to_stockpile = {
@@ -863,6 +869,11 @@ focus_tree = {
 			type =heavy_zrk1_chassis
 			variant_name = "Бук-М2"
 			amount = 10
+			producer = RUS
+		}
+		add_equipment_to_stockpile = {
+			type = hel_transport_equipment_1	
+			amount = 3
 			producer = RUS
 		}
 	
