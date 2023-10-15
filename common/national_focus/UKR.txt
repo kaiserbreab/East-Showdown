@@ -1695,17 +1695,17 @@ focus = {
 			producer = UKR
 		}
 		add_equipment_to_stockpile = {
-			type = atgm_1_eq	
+			type = ukr_atgm_1_eq	
 			amount = 750
 			producer = UKR
 		}
 		add_equipment_to_stockpile = {
-			type = atgm_2_eq	
+			type = ukr_atgm_2_eq	
 			amount = 750
 			producer = UKR
 		}
 		add_equipment_to_stockpile = {
-			type = mortar_1_eq	
+			type = ukr_mortar_1_eq	
 			amount = 1000
 			producer = UKR
 		}
