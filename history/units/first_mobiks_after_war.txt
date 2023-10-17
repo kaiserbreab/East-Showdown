@@ -1,0 +1,6 @@
+units = {
+	division = {
+		location = 18325
+		division_template = "Pechotniy batalion"
+		start_experience_factor = 0
+		start_equipment_factor = 1

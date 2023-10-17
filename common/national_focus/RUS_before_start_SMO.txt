@@ -497,6 +497,10 @@ focus_tree = {
 					id = super.7
 					hours = 4
 			    }
+				hidden_effect = {
+					load_oob = first_mobiks_after_war #To keep the front from collapsing xD
+					set_country_flag = Russian_partial_mobilization
+				}
 			}
 		}
 	}
