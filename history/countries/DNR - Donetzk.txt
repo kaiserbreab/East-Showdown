@@ -449,14 +449,14 @@ add_equipment_to_stockpile = {
 	producer = DNR
 }
 add_equipment_to_stockpile = {
-	type = ARV_equipment_0	
-	amount = 220
-	producer = UKR
+	type = AMV_equipment_0
+	amount = 700
+	producer = RUS
 }
 add_equipment_to_stockpile = {
-	type = AMV_equipment_0	
-	amount = 700
-	producer = UKR
+	type = ARV_equipment_0
+	amount = 400
+	producer = RUS
 }
 
 add_equipment_to_stockpile = {
