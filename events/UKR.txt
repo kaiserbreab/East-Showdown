@@ -1151,3 +1151,39 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = ukr.53 #Allow_branhc_SBU
+	title = ukr.53.t
+	desc = ukr.53.desc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ukr.53.a
+		add_war_support = 0.1
+		add_stability = 0.1
+	}
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
+}
+
+country_event = {
+	id = ukr.54 #Allow_branhc_Lendlease
+	title = ukr.54.t
+	desc = ukr.54.desc
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ukr.54.a
+		add_war_support = 0.1
+		add_stability = 0.1
+	}
+	immediate = {
+		mark_focus_tree_layout_dirty = yes
+	}
+}

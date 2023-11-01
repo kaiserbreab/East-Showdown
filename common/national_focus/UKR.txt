@@ -408,6 +408,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = Invite_western_politicians
 		cost = 0.5
+		completion_reward = { 
+			country_event = ukr.54
+		}
 	}
 
 	focus = {
@@ -498,6 +501,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = Expand_SRW
 		cost = 0.5
+		completion_reward = { 
+			country_event = ukr.53
+		}
 	}
 
 	focus = {
@@ -832,6 +838,9 @@ focus_tree = {
 
 	focus = {
 		id = Reoraganization_SBU
+		allow_branch = {
+			has_completed_focus = SBU
+		}
 		icon = eror404
 		prerequisite = { focus = SBU }
 		x = 0
@@ -842,11 +851,176 @@ focus_tree = {
 
 	focus = {
 		id = Lend_lease_signed
+		allow_branch = {
+			has_completed_focus = Lendlease
+		}
 		icon = eror404
 		prerequisite = { focus = Lendlease }
-		x = 0
+		x = -5
 		y = 5
 		relative_position_id = Lendlease
+		cost = 0.5
+	}
+
+	focus = {
+		id = Reform_counterintelligence
+		icon = eror404
+		prerequisite = { focus = Reoraganization_SBU }
+		x = 0
+		y = 1
+		relative_position_id = Reoraganization_SBU
+		cost = 0.5
+	}
+
+	focus = {
+		id = Start_demonstrative_cases
+		icon = eror404
+		prerequisite = { focus = Reoraganization_SBU }
+		x = -2
+		y = 1
+		relative_position_id = Reoraganization_SBU
+		cost = 0.5
+	}
+
+	focus = {
+		id = Fight_against_corruption
+		icon = eror404
+		prerequisite = { focus = Reoraganization_SBU }
+		x = 2
+		y = 1
+		relative_position_id = Reoraganization_SBU
+		cost = 0.5
+	}
+
+	focus = {
+		id = Come_Visit
+		icon = eror404
+		prerequisite = { focus = Fight_against_corruption }
+		x = 0
+		y = 1
+		relative_position_id = Fight_against_corruption
+		cost = 0.5
+	}
+
+	focus = {
+		id = Create_the_appearance_of_work
+		icon = eror404
+		prerequisite = { focus = Reform_counterintelligence }
+		x = 0
+		y = 1
+		relative_position_id = Reform_counterintelligence
+		cost = 0.5
+	}
+
+	focus = {
+		id = Mass_reduction
+		icon = eror404
+		prerequisite = { focus = Start_demonstrative_cases }
+		x = 0
+		y = 1
+		relative_position_id = Start_demonstrative_cases
+		cost = 0.5
+	}
+
+	focus = {
+		id = Search_for_new_shots
+		icon = eror404
+		prerequisite = { focus = Mass_reduction }
+		x = 0
+		y = 1
+		relative_position_id = Mass_reduction
+		cost = 0.5
+	}
+
+	focus = {
+		id = Fire_managers
+		icon = eror404
+		prerequisite = { focus = Create_the_appearance_of_work }
+		x = 0
+		y = 1
+		relative_position_id = Create_the_appearance_of_work
+		cost = 0.5
+	}
+
+	focus = {
+		id = Start_the_machine_of_repression
+		icon = eror404
+		prerequisite = { focus = Come_Visit }
+		x = 0
+		y = 1
+		relative_position_id = Come_Visit
+		cost = 0.5
+	}
+
+	focus = {
+		id = Financing
+		icon = eror404
+		prerequisite = { focus = Search_for_new_shots }
+		prerequisite = { focus = Fire_managers }
+		prerequisite = { focus = Start_the_machine_of_repression }
+		x = 0
+		y = 1
+		relative_position_id = Fire_managers
+		cost = 0.5
+	}
+
+	focus = {
+		id = Agent_search
+		icon = eror404
+		prerequisite = { focus = Financing }
+		x = -3
+		y = 1
+		relative_position_id = Financing
+		cost = 0.5
+	}
+
+	focus = {
+		id = Yellow_ribbon
+		icon = eror404
+		prerequisite = { focus = Financing }
+		x = 0
+		y = 1
+		relative_position_id = Financing
+		cost = 0.5
+	}
+
+	focus = {
+		id = Operations_on_the_territory_of_the_Russian_Federation
+		icon = eror404
+		prerequisite = { focus = Financing }
+		x = 3
+		y = 1
+		relative_position_id = Financing
+		cost = 0.5
+	}
+
+	focus = {
+		id = Atesh
+		icon = eror404
+		prerequisite = { focus = Yellow_ribbon }
+		x = 0
+		y = 1
+		relative_position_id = Yellow_ribbon
+		cost = 0.5
+	}
+
+	focus = {
+		id = Legion_of_Freedom_of_Russia
+		icon = eror404
+		prerequisite = { focus = Operations_on_the_territory_of_the_Russian_Federation }
+		x = 0
+		y = 1
+		relative_position_id = Operations_on_the_territory_of_the_Russian_Federation
+		cost = 0.5
+	}
+
+	focus = {
+		id = Fighting_gunners
+		icon = eror404
+		prerequisite = { focus = Agent_search }
+		x = 0
+		y = 1
+		relative_position_id = Agent_search
 		cost = 0.5
 	}
 }
