@@ -1273,72 +1273,144 @@ Convene_the_national_security_and_defense_council_desc: "Созвать СНБО
 War: "Война"
 War_desc: "Война."
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Headquarters_of_the_supreme_commander_in_chief: "Ставка верховного главнокомандующего"
+Headquarters_of_the_supreme_commander_in_chief_desc: "Ставка верховного главнокомандующего."
+A_question_of_economics: "Вопрос экономики"
+A_question_of_economics_desc: "Вопрос экономики."
+Hold_the_hryvnia: "Удержать гривну"
+Hold_the_hryvnia_desc: "Удержать гривну."
+War_economy: "Военная экономика"
+War_economy_desc: "Военная экономика."
+Start_building_new_factories: "Начать строительство новых заводов"
+Start_building_new_factories_desc: "Начать строительство новых заводов."
+Increase_ammunition_production: "Нарастить производство боеприпасов"
+Increase_ammunition_production_desc: "Нарастить производство боеприпасов."
+Evacuation_of_factories: "Эвакуация предприятий"
+Evacuation_of_factories_desc: "Эвакуация предприятий."
+Restoration_of_Ukraine: "Востановление Украины"
+Restoration_of_Ukraine_desc: "Востановление Украины."
+Money_from_the_west: "Деньги от запада"
+Money_from_the_west_desc: "Деньги от запада."
+Presidential_address: "Обращение президента"
+Presidential_address_desc: "Обращение президента."
+Question_of_policy: "Вопрос политики"
+Question_of_policy_desc: "Вопрос политики."
+Information_war: "Информационная война"
+Information_war_desc: "Информационная война."
+Telethon: "Телемарафон"
+Telethon_desc: "Телемарафон."
+International_propaganda: "Международная пропаганда"
+International_propaganda_desc: "Международная пропаганда."
+Derussification: "Дерусификация"
+Derussification_desc: "Дерусификация."
+Transfer_the_Kiev_Pechersk_Lavra_to_the_Ukrainian_Orthodox_Church: "Передать Киево-Печерскую Лавру УПЦ"
+Transfer_the_Kiev_Pechersk_Lavra_to_the_Ukrainian_Orthodox_Church_desc: "Передать Киево-Печерскую Лавру УПЦ."
+Trident_on_the_shield_of_the_motherland: "Тризубец на щите Родина-мать"
+Trident_on_the_shield_of_the_motherland_desc: "Тризубец на щите Родина-мать."
+Create_telegram_channels: "Создать телеграмм каналы"
+Create_telegram_channels_desc: "Создать телеграмм каналы."
+Heroes_of_the_armed_forces_of_Ukraine: "Герои украинской армии"
+Heroes_of_the_armed_forces_of_Ukraine_desc: "Герои украинской армии."
+Conversation_with_western_allies: "Разговор с западными политиками"
+Conversation_with_western_allies_desc: "Разговор с западными политиками."
+Invite_western_politicians: "Пригласить западных политиков"
+Invite_western_politicians_desc: "Пригласить западных политиков."
+Evacuation_of_the_population_to_Europe: "Эвакуация наших людей в Европу"
+Evacuation_of_the_population_to_Europe_desc: "Эвакуация наших людей в Европу."
+Returning_our_people_from_Europe: "Возвращение наших граждан из Европы"
+Returning_our_people_from_Europe_desc: "Возвращение наших граждан из Европы."
+Ask_to_close_the_sky: "Попросить закрыть небо"
+Ask_to_close_the_sky_desc: "Попросить закрыть небо."
+Transfer_a_new_russian_tank_to_the_alliesv: "Передать союзникам новейший российский танк"
+Transfer_a_new_russian_tank_to_the_alliesv_desc: "Передать союзникам новейший российский танк."
+Lendlease: "Ленд-лиз"
+Lendlease_desc: "Ленд-лиз."
+Lend_lease_signed: "Ленд-лиз подписан"
+Lend_lease_signed_desc: "Ленд-лиз подписан."
+Invite_western_military_experts: "Пригласить западных военных экспертов"
+Invite_western_military_experts_desc: "Пригласить западных военных экспертов."
+Accept_volunteers_from_other_countries: "Принимать добровольцев из других  стран"
+Accept_volunteers_from_other_countries_desc: "Принимать добровольцев из других  стран."
+Send_the_armed_forces_of_Ukraine_for_training_to_NATO: "Отправить ВСУ на обучение в НАТО"
+Send_the_armed_forces_of_Ukraine_for_training_to_NATO_desc: "Отправить ВСУ на обучение в НАТО."
+Army_question: "Вопрос армии"
+Army_question_desc: "Вопрос армии."
+Mobilization: "Мобилизация"
+Mobilization_desc: "Мобилизация."
+Expand_SRW: "Разсширить ТРО"
+Expand_SRW_desc: "Разсширить ТРО."
+SBU: "СБУ"
+SBU_desc: "СБУ."
+Power_steering_units: "Спецподразделения ГУР"
+Power_steering_units_desc: "Спецподразделения ГУР."
+Reoraganization_SBU: "Реорганизация СБУ"
+Reoraganization_SBU_desc: "Реорганизация СБУ."
+Creation_of_new_brigades: "Создание новых бригад"
+Creation_of_new_brigades_desc: "Создание новых бригад."
+Second_wave_of_mobilization: "Вторая волна мобилизации"
+Second_wave_of_mobilization_desc: "Вторая волна мобилизации."
+Creation_more_brigades: "Создать еще бригады"
+Creation_more_brigades_desc: "Создать еще бригады."
+Third_wave_of_mobilization: "Третяя волна мобилизации"
+Third_wave_of_mobilization_desc: "Третяя волна мобилизации."
+Counter_Step_Guard: "Гвардия контрнаступа"
+Counter_Step_Guard_desc: "Гвардия контрнаступа."
+Reorganize_the_general_staff: "Реорганизация генштаба"
+Reorganize_the_general_staff_desc: "Реорганизация генштаба."
+Appoint_direction_commanders: "Назначить командующих направлениями"
+Appoint_direction_commanders_desc: "Назначить командующих направлениями."
+Defense_plan: "План обороны"
+Defense_plan_desc: "План обороны."
+Kharkov_defense_plan: "План оборооны Харькова"
+Kharkov_defense_plan_desc: "План оборооны Харькова."
+Kherson_defense_plan: "План обороны Херсона"
+Kherson_defense_plan_desc: "План обороны Херсона."
+Kyiv_defense_plan: "План оборонры Киева"
+Kyiv_defense_plan_desc: "План оборонры Киева."
+Donbass_defense_plan: "План обороны Донбасса"
+Donbass_defense_plan_desc: "План обороны Донбасса."
+Partisans: "Партизаны"
+Partisans_desc: "Партизаны."
+Prepare_counterattacks: "Подготовить контратаки"
+Prepare_counterattacks_desc: "Подготовить контратаки."
+Army_modernization: "Модернизация армии"
+Army_modernization_desc: "Модернизация армии."
+Bogdana: "Богдана"
+Bogdana_desc: "Богдана."
+Launch_into_production: "Запустить в производство"
+Launch_into_production_desc: "Запустить в производство."
+BM_Bulat: "Булат"
+BM_Bulat_desc: "Булат."
+T_84U_Oplot: "Оплот"
+T_84U_Oplot_desc: "Оплот."
+BTR_3E: "БТР 3"
+BTR_3E_desc: "БТР 3."
+BTR_4: "БТР 4"
+BTR_4_desc: "БТР 4."
+Banderomobiles: "Бандеромобили"
+Banderomobiles_desc: "Бандеромобили."
+Contact_1: "Контакт 1"
+Contact_1_desc: "Контакт 1."
+Contact_1_on_western_technology: "Контакт 1 на западной технике"
+Contact_1_on_western_technology_desc: "Контакт 1 на западной технике."
+FPV_Drones: "ФПВ дроны"
+FPV_Drones_desc: "ФПВ дроны."
+Kamikaze_drones: "Дроны камикадзе"
+Kamikaze_drones_desc: "Дроны камикадзе."
+Starlink: "Старлинк"
+Starlink_desc: "Старлинк."
+Kropiva: "Кропива"
+Kropiva_desc: "Кропива."
+Start_developing_long_range_missiles: "Начать разработку дальнобойных ракет"
+Start_developing_long_range_missiles_desc: "Начать разработку дальнобойных ракет."
+Upgrade_UAV_STRIZH: "Модернизация БПЛА Стриж"
+Upgrade_UAV_STRIZH_desc: "Модернизация БПЛА Стриж."
+Modernized_S_200_missiles: "Модернизация ракет С 200"
+Modernized_S_200_missiles_desc: "Модернизация ракет С 200."
+Create_an_analogue_of_a_shahid: "Создать аналог шахедов"
+Create_an_analogue_of_a_shahid_desc: "Создать аналог шахедов."
+OTRK_THUNDER: "ОТРК ГРОМ"
+OTRK_THUNDER_desc: "ОТРК ГРОМ."
 
 
 

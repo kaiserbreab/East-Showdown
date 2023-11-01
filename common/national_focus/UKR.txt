@@ -681,7 +681,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = T-84U_Oplot
+		id = T_84U_Oplot
 		icon = eror404
 		prerequisite = { focus = BM_Bulat }
 		x = 0
@@ -837,6 +837,16 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = SBU
+		cost = 0.5
+	}
+
+	focus = {
+		id = Lend_lease_signed
+		icon = eror404
+		prerequisite = { focus = Lendlease }
+		x = 0
+		y = 5
+		relative_position_id = Lendlease
 		cost = 0.5
 	}
 }
