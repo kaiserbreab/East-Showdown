@@ -1242,6 +1242,37 @@ POL_forward_to_the_future: "Вперед... в Будущее!"
 
 character_will_be_purged: "§RСудьба персонажа будет выбрана§!"
 
+### Ukraine rework Senator
+
+War_is_coming_soon: "Скоро война"
+War_is_coming_soon_desc: "Скоро война."
+Warning_from_western_allies: "Предупреждение от западных союзников"
+Warning_from_western_allies_desc: "Предупреждение от западных союзников."
+Meeting_of_the_countrys_top_leadership: "Заседание высшего командования страны"
+Meeting_of_the_countrys_top_leadership_desc: "Заседание высшего командования страны."
+Prepare_the_APU: "Подготовить ВСУ"
+Prepare_the_APU_desc: "Подготовить ВСУ."
+Preparing_todefend_cities: "Подготовка к защите городов"
+Preparing_todefend_cities_desc: "Подготовка к защите городов."
+The_situation_in_Donbass: "Ситуация на Донбассе"
+The_situation_in_Donbass_desc: "Ситуация на Донбассе."
+Strengthen_the_border: "Укрепить границу"
+Strengthen_the_border_desc: "Укрепить границу."
+Prepare_aviation: "Подготовить авиацию"
+Prepare_aviation_desc: "Подготовить авиацию."
+Calm_people_down: "Успокоить людей"
+Calm_people_down_desc: "Успокоить людей."
+Zelenskys_trip_to_Donbass: "Поездка Зеленского на Донбасс"
+Zelenskys_trip_to_Donbass_desc: "Поездка Зеленского на Донбасс."
+Prepare_air_defense: "Подготовить ПВО"
+Prepare_air_defense_desc: "Подготовить ПВО."
+Mine_the_border: "Заминировать границу"
+Mine_the_border_desc: "Заминировать границу."
+Convene_the_national_security_and_defense_council: "Созвать СНБО"
+Convene_the_national_security_and_defense_council_desc: "Созвать СНБО."
+War: "Война"
+War_desc: "Война."
+
 
 
 
