@@ -916,6 +916,7 @@ focus_tree = {
 		relative_position_id = Army_question
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = mobilization1
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -977,6 +978,8 @@ focus_tree = {
 		relative_position_id = Mobilization
 		cost = 0.5
 		completion_reward = { 
+			add_war_support = 0.1
+			add_political_power = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -992,6 +995,7 @@ focus_tree = {
 		relative_position_id = Creation_of_new_brigades
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = mobilization2
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1007,6 +1011,7 @@ focus_tree = {
 		relative_position_id = Second_wave_of_mobilization
 		cost = 0.5
 		completion_reward = { 
+			add_political_power = 200
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1022,6 +1027,7 @@ focus_tree = {
 		relative_position_id = Creation_more_brigades
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = mobilization3
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1082,6 +1088,7 @@ focus_tree = {
 		relative_position_id = Appoint_direction_commanders
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = 100
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1097,6 +1104,14 @@ focus_tree = {
 		relative_position_id = Defense_plan
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = -50
+			103 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1107,11 +1122,19 @@ focus_tree = {
 		id = Kherson_defense_plan
 		icon = eror404
 		prerequisite = { focus = Defense_plan }
-		x = -2
+		x = -1
 		y = 2
 		relative_position_id = Defense_plan
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = -50
+			253 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1127,6 +1150,21 @@ focus_tree = {
 		relative_position_id = Defense_plan
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = -50
+			94 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = UKR_kiev_def
+					days = 30
+				}
+			}
+			95 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = UKR_kiev_def
+					days = 30
+				}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1137,11 +1175,47 @@ focus_tree = {
 		id = Donbass_defense_plan
 		icon = eror404
 		prerequisite = { focus = Defense_plan }
-		x = 2
+		x = 1
 		y = 2
 		relative_position_id = Defense_plan
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = -100
+			145 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
+			165 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
+			182 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
+			237 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
+			213 = {
+				add_dynamic_modifier = {
+					scope = UKR
+					modifier = ukr_podgotovka_oborony
+					days = 30
+				}
+			}
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
