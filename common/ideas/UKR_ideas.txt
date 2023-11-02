@@ -843,7 +843,6 @@ ideas = {
 			removal_cost = -1
 			picture = generic_constitutional_guarantees
 			modifier = {
-				production_speed_buildings_factor = 0.1
 				industry_free_repair_factor = 0.25
 				industry_repair_factor = 0.25
 			}
@@ -943,6 +942,31 @@ ideas = {
 				consumer_goods_factor = 0.1
 				production_factory_max_efficiency_factor = 0.4
 		    }
+		}
+		UKR_money_from_West = {
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.05
+				political_power_gain = -0.5
+			}
+		}
+		UKR_grivna_fall = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GFX_idea_tos2
+			modifier = {
+				democratic_drift = -0.02
+				stability_factor = -0.2
+				consumer_goods_factor = 0.3
+			}
 		}
 	
 		##############################################################

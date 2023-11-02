@@ -37,6 +37,7 @@ focus_tree = {
 		relative_position_id = War_is_coming_soon
 		cost = 0.5
 		completion_reward = { 
+			add_stability = -0.1
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -52,6 +53,7 @@ focus_tree = {
 		relative_position_id = Warning_from_western_allies
 		cost = 0.5
 		completion_reward = { 
+			add_political_power = 50
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -83,6 +85,7 @@ focus_tree = {
 		relative_position_id = Meeting_of_the_countrys_top_leadership
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = UKR_land_forts_construction
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -98,6 +101,7 @@ focus_tree = {
 		relative_position_id = Meeting_of_the_countrys_top_leadership
 		cost = 0.5
 		completion_reward = { 
+			add_political_power = 50
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -175,7 +179,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			custom_effect_tooltip = Ukraine_pvo_tt
+			custom_effect_tooltip = UKR_pvo_tt
 			hidden_effect = {
 			94 = {
 				add_building_construction = {
@@ -293,6 +297,8 @@ focus_tree = {
 		relative_position_id = Prepare_air_defense
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = 30
+            add_political_power = 50
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -313,6 +319,8 @@ focus_tree = {
 		relative_position_id = Convene_the_national_security_and_defense_council
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = UKR_grivna_fall
+			add_ideas = society_very_high
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -328,6 +336,8 @@ focus_tree = {
 		relative_position_id = War
 		cost = 0.5
 		completion_reward = { 
+			add_command_power = 20
+			add_political_power = 50
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -343,6 +353,8 @@ focus_tree = {
 		relative_position_id = Headquarters_of_the_supreme_commander_in_chief
 		cost = 0.5
 		completion_reward = { 
+			add_political_power = 50
+			add_stability = 0.05
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -358,6 +370,7 @@ focus_tree = {
 		relative_position_id = Presidential_address
 		cost = 0.5
 		completion_reward = { 
+
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -388,6 +401,7 @@ focus_tree = {
 		relative_position_id = A_question_of_economics
 		cost = 0.5
 		completion_reward = { 
+			remove_ideas = UKR_grivna_fall
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -403,6 +417,7 @@ focus_tree = {
 		relative_position_id = A_question_of_economics
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = War_economy
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -418,7 +433,40 @@ focus_tree = {
 		relative_position_id = War_economy
 		cost = 0.5
 		completion_reward = { 
+			custom_effect_tooltip = UKR_arms_factory_tt
+			hidden_effect = {
+			153 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			81 = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			90 = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			143 = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			62 = {
+                add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
+	}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -433,7 +481,22 @@ focus_tree = {
 		relative_position_id = Start_building_new_factories
 		cost = 0.5
 		completion_reward = { 
+		custom_effect_tooltip = UKR_ammo_plant_tt
+		hidden_effect = {
+        167 = {
+			add_building_construction = {
+				type = ammunition_plant
+				level = 1
+			}
 		}
+		140 = {
+			add_building_construction = {
+				type = ammunition_plant
+				level = 1
+			}
+		}
+		}
+	}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -448,6 +511,78 @@ focus_tree = {
 		relative_position_id = A_question_of_economics
 		cost = 0.5
 		completion_reward = { 
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}	
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}	
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			random_state = {
+				prioritize = { 94 187 208 253 256 135 108 103 }
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			add_offsite_building = { type = arms_factory level = 5 }
+			add_offsite_building = { type = industrial_complex level = 7 }
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -463,6 +598,7 @@ focus_tree = {
 		relative_position_id = Evacuation_of_factories
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = wartine_economic
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -478,6 +614,7 @@ focus_tree = {
 		relative_position_id = Restoration_of_Ukraine
 		cost = 0.5
 		completion_reward = { 
+			add_ideas = UKR_money_from_West
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
