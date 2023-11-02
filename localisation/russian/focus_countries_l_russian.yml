@@ -1242,7 +1242,7 @@ POL_forward_to_the_future: "Вперед... в Будущее!"
 
 character_will_be_purged: "§RСудьба персонажа будет выбрана§!"
 
-### Ukraine rework Senator
+### Ukraine rework Senator ###
 
 War_is_coming_soon: "Скоро война"
 War_is_coming_soon_desc: "Скоро война."
@@ -1412,31 +1412,38 @@ Create_an_analogue_of_a_shahid_desc: "Создать аналог шахедов
 OTRK_THUNDER: "ОТРК ГРОМ"
 OTRK_THUNDER_desc: "ОТРК ГРОМ."
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Reform_counterintelligence: "Реформировать контррзаведку"
+Reform_counterintelligence: "Реформировать контррзаведку."
+Fight_against_corruption: "Борьба с корупцией"
+Fight_against_corruption: "Борьба с корупцией."
+Start_demonstrative_cases: "Завести показательные дела"
+Start_demonstrative_cases: "Завести показательные дела."
+Mass_reduction: "Массовые репрессии"
+Mass_reduction: "Массовые репрессии."
+Create_the_appearance_of_work: "Создать видимость работы"
+Create_the_appearance_of_work: "Создать видимость работы."
+Come_Visit: "Прийти в гости"
+Come_Visit: "Прийти в гости."
+Search_for_new_shots: "Искать новые кадры"
+Search_for_new_shots: "Искать новые кадры."
+Fire_managers: "Уволить руководителей"
+Fire_managers: "Уволить руководителей."
+Start_the_machine_of_repression: "Запустить машину репрессий"
+Start_the_machine_of_repression: "Запустить машину репрессий."
+Financing: "Финансирование"
+Financing: "Финансирование."
+Agent_search: "Поиск агентов"
+Agent_search: "Поиск агентов."
+Fighting_gunners: "Борьба с наводчиками"
+Fighting_gunners: "Борьба с наводчиками."
+Yellow_ribbon: "Желтая лента"
+Yellow_ribbon: "Желтая лента."
+Operations_on_the_territory_of_the_Russian_Federation: "Операции на територии России"
+Operations_on_the_territory_of_the_Russian_Federation: "Операции на територии России."
+Legion_of_Freedom_of_Russiav: "Легион свободы России"
+Legion_of_Freedom_of_Russiav: "Легион свободы России."
+Atesh: "Атеш"
+Atesh: "Атеш."
 
 
 

@@ -1,7 +1,7 @@
 focus_tree = {
 	id = Ukraine_focus
-	continuous_focus_position = { x = 0 y = 3000 } 
-	country = {	
+	continuous_focus_position = { x = 0 y = 3000 }
+	country = {
 		factor = 0
 		modifier = {
 			add = 10
@@ -21,6 +21,11 @@ focus_tree = {
 		x = 30
 		y = 2
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -31,6 +36,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = War_is_coming_soon
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -41,6 +51,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Warning_from_western_allies
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -51,6 +66,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = Meeting_of_the_countrys_top_leadership
 		cost = 0.5
+		completion_reward = {
+			army_experience = 50
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -61,6 +82,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Meeting_of_the_countrys_top_leadership
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -71,6 +97,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Meeting_of_the_countrys_top_leadership
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -81,6 +112,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Preparing_todefend_cities
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -91,6 +127,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Prepare_the_APU
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -101,6 +142,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = The_situation_in_Donbass
 		cost = 0.5
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.03
+			add_political_power = 50
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -111,6 +160,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = Calm_people_down
 		cost = 0.5
+		completion_reward = {
+			add_political_power = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -119,6 +174,95 @@ focus_tree = {
 		prerequisite = { focus = Prepare_aviation }
 		x = 0
 		y = 1
+		completion_reward = {
+			custom_effect_tooltip = Ukraine_pvo_tt
+			hidden_effect = {
+			94 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			256 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			103 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			187 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			108 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			208 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			72 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			233 = {
+	        	add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			149 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			182 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			145 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			165 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+			253 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+				}
+			}
+		}
+	}
 		relative_position_id = Prepare_aviation
 		cost = 0.5
 	}
@@ -131,6 +275,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Strengthen_the_border
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -143,6 +292,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Prepare_air_defense
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	### after war ###
@@ -158,6 +312,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = Convene_the_national_security_and_defense_council
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -168,6 +327,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = War
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -178,6 +342,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Headquarters_of_the_supreme_commander_in_chief
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -188,6 +357,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Presidential_address
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -197,7 +371,12 @@ focus_tree = {
 		x = -15
 		y = 1
 		relative_position_id = Headquarters_of_the_supreme_commander_in_chief
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -207,7 +386,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = A_question_of_economics
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -217,7 +401,12 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = A_question_of_economics
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -227,7 +416,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = War_economy
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -237,7 +431,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Start_building_new_factories
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -247,7 +446,12 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = A_question_of_economics
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -257,7 +461,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Evacuation_of_factories
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -267,7 +476,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Restoration_of_Ukraine
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -277,7 +491,12 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = Question_of_policy
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -287,7 +506,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Information_war
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -297,7 +521,12 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = Telethon
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -307,7 +536,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Derussification
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -317,7 +551,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Transfer_the_Kiev_Pechersk_Lavra_to_the_Ukrainian_Orthodox_Church
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -327,7 +566,12 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = Telethon
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -337,7 +581,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Create_telegram_channels
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -347,7 +596,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Telethon
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -357,7 +611,12 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = Question_of_policy
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -367,7 +626,12 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = Conversation_with_western_allies
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -377,7 +641,12 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = Invite_western_military_experts
-		cost = 0.5	
+		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -388,6 +657,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Accept_volunteers_from_other_countries
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -398,6 +672,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Conversation_with_western_allies
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -411,6 +690,9 @@ focus_tree = {
 		completion_reward = { 
 			country_event = ukr.54
 		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -421,6 +703,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Invite_western_politicians
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -431,6 +718,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Ask_to_close_the_sky
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -441,6 +733,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Invite_western_politicians
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -451,6 +748,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Evacuation_of_the_population_to_Europe
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -461,6 +763,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Headquarters_of_the_supreme_commander_in_chief
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -471,6 +778,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_question
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -481,6 +793,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Mobilization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -491,6 +808,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Expand_SRW
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -504,6 +826,9 @@ focus_tree = {
 		completion_reward = { 
 			country_event = ukr.53
 		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -514,6 +839,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Mobilization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -524,6 +854,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Creation_of_new_brigades
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -534,6 +869,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Second_wave_of_mobilization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -544,6 +884,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Creation_more_brigades
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -554,6 +899,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Third_wave_of_mobilization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -564,6 +914,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_question
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -574,6 +929,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Reorganize_the_general_staff
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -584,6 +944,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Appoint_direction_commanders
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -594,6 +959,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Defense_plan
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -604,6 +974,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = Defense_plan
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -614,6 +989,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Defense_plan
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -624,6 +1004,11 @@ focus_tree = {
 		y = 2
 		relative_position_id = Defense_plan
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -634,6 +1019,11 @@ focus_tree = {
 		y = 3
 		relative_position_id = Defense_plan
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -644,6 +1034,11 @@ focus_tree = {
 		y = 4
 		relative_position_id = Defense_plan
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -654,6 +1049,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_question
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -664,6 +1064,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_modernization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -674,6 +1079,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Bogdana
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -684,6 +1094,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_modernization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -694,6 +1109,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = BM_Bulat
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -704,6 +1124,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_modernization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -714,6 +1139,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = BTR_3E
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -724,6 +1154,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_modernization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -734,6 +1169,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Banderomobiles
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -744,6 +1184,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Contact_1
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -754,6 +1199,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_modernization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -764,6 +1214,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = FPV_Drones
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -774,6 +1229,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Kamikaze_drones
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -784,6 +1244,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Starlink
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -794,6 +1259,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Army_modernization
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -804,6 +1274,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Start_developing_long_range_missiles
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -814,6 +1289,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Upgrade_UAV_STRIZH
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -824,6 +1304,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Modernized_S_200_missiles
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -834,6 +1319,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Create_an_analogue_of_a_shahid
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -847,6 +1337,11 @@ focus_tree = {
 		y = 7
 		relative_position_id = SBU
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -860,6 +1355,11 @@ focus_tree = {
 		y = 5
 		relative_position_id = Lendlease
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -870,6 +1370,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Reoraganization_SBU
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -880,6 +1385,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Reoraganization_SBU
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -890,6 +1400,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Reoraganization_SBU
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -900,6 +1415,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Fight_against_corruption
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -910,6 +1430,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Reform_counterintelligence
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -920,6 +1445,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Start_demonstrative_cases
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -930,6 +1460,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Mass_reduction
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -940,6 +1475,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Create_the_appearance_of_work
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -950,6 +1490,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Come_Visit
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -962,6 +1507,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Fire_managers
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -972,6 +1522,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Financing
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -982,6 +1537,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Financing
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -992,6 +1552,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Financing
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -1002,6 +1567,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Yellow_ribbon
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -1012,6 +1582,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = Operations_on_the_territory_of_the_Russian_Federation
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -1022,5 +1597,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = Agent_search
 		cost = 0.5
+		completion_reward = { 
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 }
