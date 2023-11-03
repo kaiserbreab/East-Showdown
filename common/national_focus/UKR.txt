@@ -21,7 +21,7 @@ focus_tree = {
 		x = 30
 		y = 2
 		cost = 0.5
-		completion_reward = { 
+		completion_reward = {
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -36,7 +36,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = War_is_coming_soon
 		cost = 0.5
-		completion_reward = { 
+		completion_reward = {
 			add_stability = -0.1
 		}
 		search_filters = {
@@ -269,6 +269,9 @@ focus_tree = {
 	}
 		relative_position_id = Prepare_aviation
 		cost = 0.5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 	focus = {
@@ -1240,10 +1243,10 @@ focus_tree = {
 	focus = {
 		id = Prepare_counterattacks
 		icon = eror404
-		prerequisite = { focus = Defense_plan }
+		prerequisite = { focus = Partisans }
 		x = 0
-		y = 4
-		relative_position_id = Defense_plan
+		y = 1
+		relative_position_id = Partisans
 		cost = 0.5
 		completion_reward = { 
 		}
@@ -1812,6 +1815,628 @@ focus_tree = {
 		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	### lendlease ###
+
+	focus = {
+		id = UKR_Lend_leas_USA
+		icon = GFX_Landleas1
+		prerequisite = { focus = Lend_lease_signed }
+		x = 0
+		y = 1
+		relative_position_id = Lend_lease_signed
+		cost = 0.5
+		available = {
+			has_war_with = RUS
+		}
+		completion_reward = {
+			custom_effect_tooltip = UKR_lendlease_tooltip
+		}
+		search_filters = { 
+			FOCUS_FILTER_POLITICAL 
+		}
+	}
+	focus = {
+		id = UKR_large_batch_of_small_arms
+		icon = GFX_guns1
+		prerequisite = { focus = UKR_Lend_leas_USA }
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.2
+		ai_will_do = {
+			factor = 100
+		}
+		x = -6
+		y = 1
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			add_ideas = society_very_high
+			custom_effect_tooltip = UKR_strelkovka_tooltip
+			UKR = {
+				add_equipment_to_stockpile = {
+					type = nto_infantry_equipment_2
+					amount = 25000
+					producer = NTO
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 10000
+					producer = NTO
+				} 
+				}
+			}
+		}
+	
+	focus = {
+		id = UKR_We_need_more_tanks
+		icon = GFX_pt-91twardy
+		prerequisite = { focus = UKR_large_batch_of_small_arms }
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.3
+		x = -6
+		y = 2
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_sovtanks_tooltip
+			army_experience = 100
+    }
+	}
+	focus = {
+		id = UKR_We_need_more_MRAPS
+		icon = GFX_mraps1
+		prerequisite = { focus = UKR_large_batch_of_small_arms }
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.3
+		x = -4
+		y = 2
+
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_mraps_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_We_need_m777
+		icon = GFX_m777
+		prerequisite = { focus = UKR_large_batch_of_small_arms }
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 1
+		x = -10
+		y = 2
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_777_tooltip
+		}
+	}
+
+
+	focus = {
+		id = UKR_We_need_more_IFV
+		icon = GFX_bmp-2ab
+		prerequisite = { focus = UKR_large_batch_of_small_arms }
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.3
+		x = -8
+		y = 2
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_sovbmp_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Learn_to_use_Western_technology
+		icon = GFX_Nato_trening
+		prerequisite = { focus = UKR_We_need_more_tanks 
+		focus = UKR_We_need_more_IFV
+		focus = UKR_We_need_more_MRAPS 
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 2.5
+
+		x = -6
+		y = 3
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_westtech_tooltip
+		}
+	}
+	focus = {
+		id = UKR_We_need_Patriot_and_Iris
+		icon = GFX_IRIS-T
+		prerequisite = { focus = UKR_Learn_to_use_Western_technology
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 5
+		x = -6
+		y = 4
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_ppo_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Urgent_need_for_Himars
+		icon = GFX_himersrevork1
+		prerequisite = { focus = UKR_Learn_to_use_Western_technology
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 3
+		x = -4
+		y = 4
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_Himars_tt
+		}
+	}
+	focus = {
+		id = UKR_Request_M109_Paladin
+		icon = GFX_paladin1
+		prerequisite = { focus = UKR_Learn_to_use_Western_technology
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 1
+		x = -10
+		y = 4
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_109_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Receiving_a_large_batch_of_drones
+		icon = GFX_BPLA1
+		prerequisite = { focus = UKR_Learn_to_use_Western_technology
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 1
+		x = -8
+		y = 4
+		
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_bayraktar_tooltip
+			custom_effect_tooltip = UKR_bpla_tooltip
+		}
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = UKR_Getting_Brandleys
+		icon = GFX_bradleyrervork1
+		prerequisite = { focus = UKR_Urgent_need_for_Himars
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 5
+		x = -5
+		y = 5
+	    
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_bradley_tooltip
+		}
+	}
+	focus = {
+		id = UKR_Getting_Marder
+		icon = GFX_marder
+		prerequisite = { focus = UKR_Urgent_need_for_Himars
+		focus = UKR_Receiving_a_large_batch_of_drones
+		focus = UKR_We_need_Patriot_and_Iris
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 5
+		x = -7
+		y = 5
+		
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_marder_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Request_Straikers
+		icon = GFX_straiker1
+		prerequisite = { focus =  UKR_Urgent_need_for_Himars 
+		focus = UKR_Receiving_a_large_batch_of_drones
+		focus = UKR_We_need_Patriot_and_Iris
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 5
+		x = -9
+		y = 5
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_straikers_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Learn_to_use_Western_tanks 
+		icon = GFX_Nato_trening
+		prerequisite = { 
+		focus = UKR_Urgent_need_for_Himars
+		focus = UKR_We_need_Patriot_and_Iris
+	}
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 8
+		x = -6
+		y = 7
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_westtanks_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Request_Leclercs 
+		icon = Naxryouk
+		prerequisite = { 
+		focus = UKR_Learn_to_use_Western_tanks
+	}
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.5
+		x = -9
+		y = 9
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_lec_tooltip_tt
+		}
+	}
+
+	focus = {
+		id = UKR_Request_Challengers
+		icon = Naxryouk
+		prerequisite = { 
+		focus = UKR_Learn_to_use_Western_tanks
+	}
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.5
+		x = -3
+		y = 9
+
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_cha_tooltip_tt
+		}
+	}
+
+
+
+	focus = {
+		id = UKR_Request_Leopards
+		icon = GFX_leopards1
+		prerequisite = { focus =  UKR_Learn_to_use_Western_tanks 
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.5
+		x = -7
+		y = 9
+		cost = 0.5
+
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_leo_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Request_Abrams
+		icon = GFX_abramsrevork
+		prerequisite = { focus =  UKR_Learn_to_use_Western_tanks 
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.5
+		x = -5
+		y = 9
+		cost = 0.5
+
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_abr_tooltip
+		}
+	}
+
+
+	focus = {
+		id = UKR_We_need_migs29
+		icon = GFX_mig-29slovakia
+		prerequisite = { focus =  UKR_Lend_leas_USA
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.3
+		x = -1
+		y = 1
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_mig29_tooltip
+		}
+	}
+	
+	focus = {
+		id = UKR_We_need_su_25
+		icon = GFX_BOLGARIANSU25
+		prerequisite = { focus =  UKR_Lend_leas_USA
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.3
+		x = 1
+		y = 1
+
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_su25_tooltip
+		}
+	}
+	focus = {
+		id = UKR_We_need_mi_24b
+		icon = GFX_mi-24b
+		prerequisite = { focus =  UKR_Lend_leas_USA
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 0.3
+		x = 3
+		y = 1
+		
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_mi24_tooltip
+		}
+	}
+
+	focus = {
+		available = {
+			always = no
+		}
+		id = UKR_Train_pilots_in_Western_technology
+		icon = GFX_Nato_trening
+		prerequisite = { focus =  UKR_We_need_mi_24b
+		focus =  UKR_We_need_su_25
+		focus =  UKR_We_need_migs29
+	}
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 12
+		x = 1
+		y = 2
+		
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_westsamoleti_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Request_an_F-16
+		icon = GFX_F16
+		prerequisite = { focus =  UKR_Train_pilots_in_Western_technology
+
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 1.5
+		x = -1
+		y = 3
+	
+
+		available = {
+			has_war_with = RUS
+	}
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_f16_tooltip
+		}
+	}
+
+	focus = {
+		id = UKR_Request_an_AH-64_Apache
+		icon = GFX_AH64
+		prerequisite = { focus =  UKR_Train_pilots_in_Western_technology
+
+	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 1.5
+		x = 1
+		y = 3
+
+		available = {
+			has_war_with = RUS
+	}
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_ah64_tooltip
+		}
+	}
+	focus = {
+		id = UKR_Request_Eurofighter_Typhoon
+		icon = GFX_eurofighter
+		prerequisite = { focus =  UKR_Train_pilots_in_Western_technology	} 
+
+		relative_position_id = UKR_Lend_leas_USA
+		cost = 1.5
+		x = 3
+		y = 3
+
+		available = {
+			has_war_with = RUS
+	}
+
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+
+		completion_reward = {
+			custom_effect_tooltip = UKR_eurofig_tooltip
 		}
 	}
 }
