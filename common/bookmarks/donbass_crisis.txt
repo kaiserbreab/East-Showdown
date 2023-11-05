@@ -1,8 +1,8 @@
 bookmarks = {
 	bookmark = {
-		name = "GATHERING_STORM_NAME"
-		desc = "GATHERING_STORM_NAME"
-		date = 2022.1.1.1
+		name = "donbass_crisis_NAME"
+		desc = "donbass_crisis_NAME"
+		date = 2014.1.1.1
 		picture = "GFX_select_date_1936"
 		default_country = "UKR"
 		default = yes		
