@@ -7,7 +7,7 @@ bookmarks = {
 		default_country = "UKR"
 		default = yes		
 		"UKR"={
-			history = "UKR_GATHERING_STORM_DESC"
+			history = "UKR_east_showdown_DESC"
 			ideology = democratic
 			ideas = {
 				UKR_european_dream
@@ -19,7 +19,7 @@ bookmarks = {
 		}
 		
 		"RUS"={
-			history = "RUS_GATHERING_STORM_DESC"
+			history = "RUS_east_showdown_DESC"
 			ideology = neutrality
 			
 			ideas = {
@@ -32,7 +32,7 @@ bookmarks = {
 		}
 		"NTO"={
 			minor = yes
-			history = "NTO_GATHERING_STORM_DESC"
+			history = "NTO_east_showdown_DESC"
 			ideology = democratic
 			ideas = {
 				NTO_supply_of_the_eastern_european_army_1
@@ -45,7 +45,7 @@ bookmarks = {
 		}
 		"POL"={
 			minor = yes
-			history = "POL_GATHERING_STORM_DESCR"
+			history = "POL_east_showdown_DESC"
 			ideology = democratic
 			ideas = {
 				
@@ -56,7 +56,7 @@ bookmarks = {
 		}
 		"HUN"={
 			minor = yes
-			history = "HUN_GATHERING_STORM_DESC"
+			history = "HUN_east_showdown_DESC"
 			ideology = democratic
 			ideas = {
 				
@@ -67,7 +67,7 @@ bookmarks = {
 		}
 		"BLR"={
 			minor = yes
-			history = "BLR_GATHERING_STORM_DESC"
+			history = "BLR_east_showdown_DESC"
 			ideology = neutrality
 			ideas = {
 				BLR_last_european_dictatorship
@@ -79,7 +79,7 @@ bookmarks = {
 		}
 		"DPR"={
 			minor = yes
-			history = "DPR_GATHERING_STORM_DESC"
+			history = "DPR_east_showdown_DESC"
 			ideology = fascism
 			ideas = {
 				
@@ -90,7 +90,7 @@ bookmarks = {
 		}
 		"LPR"={
 			minor = yes
-			history = "LPR_GATHERING_STORM_DESC"
+			history = "LPR_east_showdown_DESC"
 			ideology = fascism
 			ideas = {
 				
@@ -101,7 +101,7 @@ bookmarks = {
 		}
 		"PMR"={
 			minor = yes
-			history = "PMR_GATHERING_STORM_DESC"
+			history = "PMR_east_showdown_DESC"
 			ideology = democratic
 			ideas = {
 				
@@ -112,7 +112,7 @@ bookmarks = {
 		}
 		"CHE"={
 			minor = yes
-			history = "CHE_GATHERING_STORM_DESC"
+			history = "CHE_east_showdown_DESC"
 			ideology = neutrality
 			ideas = {
 				CHE_conservative_society
@@ -124,7 +124,7 @@ bookmarks = {
 		}
 		"WGN"={
 			minor = yes
-			history = "WGN_GATHERING_STORM_DESC"
+			history = "WGN_east_showdown_DESC"
 			ideology = fascism
 			ideas = {
 				WGN_complex_use_of_equipment
