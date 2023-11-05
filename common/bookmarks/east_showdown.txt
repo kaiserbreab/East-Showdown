@@ -31,7 +31,6 @@ bookmarks = {
 			}
 		}
 		"NTO"={
-			minor = yes
 			history = "NTO_east_showdown_DESC"
 			ideology = democratic
 			ideas = {
