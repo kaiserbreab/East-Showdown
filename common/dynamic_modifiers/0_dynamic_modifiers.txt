@@ -522,6 +522,14 @@ UKR_Kharkiv_Counteroffensive_modifier = {
 	breakthrough_factor = 0.35
 }
 
+UKR_dam_explosion = {
+	enable = { always = yes }
+	icon = GFX_ace_none
+
+	army_speed_factor = -1
+	army_attack_factor = -1
+}
+
 UKR_Kherson_Counteroffensive_modifier = {
 	enable = { always = yes }
 	icon = GFX_ace_none

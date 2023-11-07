@@ -213,3 +213,15 @@ UKR_destroy_oligarchate_category = {
 	}
 	visible_when_empty = no
 }
+
+UKR_bombing_kachovka_category = {
+    icon = decision_category_icon_second_russoukrainian_war
+    picture = decision_category_picture_himars
+	allowed = {
+		original_tag = UKR
+	}
+    visible = {
+		has_war_with = RUS
+	}
+	visible_when_empty = no
+}
